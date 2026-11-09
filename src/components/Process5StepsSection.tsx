@@ -50,7 +50,7 @@ export const Process5StepsSection: React.FC = () => {
                   <span className="text-sm font-mono font-black text-[#E30613]">
                     PASO {step.step}
                   </span>
-                  <span className="text-[11px] font-mono font-bold text-neutral-400 group-hover:text-black transition-colors">
+                  <span className="text-[11px] font-mono font-bold text-neutral-600 group-hover:text-black transition-colors">
                     0{idx + 1}/05
                   </span>
                 </div>
@@ -59,7 +59,7 @@ export const Process5StepsSection: React.FC = () => {
                   {step.title}
                 </h3>
 
-                <p className="text-[11px] font-bold uppercase tracking-wider text-neutral-500 mb-3 font-mono">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-neutral-700 mb-3 font-mono">
                   {step.subtitle}
                 </p>
 
@@ -69,7 +69,7 @@ export const Process5StepsSection: React.FC = () => {
               </div>
 
               <div className="pt-3 border-t border-neutral-100">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-1 font-mono">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-700 block mb-1 font-mono">
                   ENTREGABLE / SALIDA:
                 </span>
                 <div className="text-xs font-semibold text-neutral-800 leading-tight flex items-start gap-1.5">

@@ -37,26 +37,26 @@ export const SobrePatriciaSection: React.FC = () => {
                 CUADRO DE DATOS RÁPIDOS · PERFIL AUDITADO
               </span>
             </div>
-            <span className="text-[11px] font-mono text-neutral-400 bg-neutral-800 px-2.5 py-1 rounded">
+            <span className="text-[11px] font-mono text-neutral-200 bg-neutral-800 px-2.5 py-1 rounded">
               DATOS COMPROBABLES Y ENLACES VERIFICADOS
             </span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
             <div className="space-y-1.5">
-              <span className="text-[11px] font-mono font-bold text-neutral-400 uppercase tracking-wider block">
+              <span className="text-[11px] font-mono font-bold text-neutral-300 uppercase tracking-wider block">
                 BASE PROFESIONAL
               </span>
               <p className="text-sm font-bold text-white">
                 Medellín, Colombia.
               </p>
-              <span className="text-xs text-neutral-400 block">
+              <span className="text-xs text-neutral-300 block">
                 Atención y consultoría estratégica para profesionales en Iberoamérica y España.
               </span>
             </div>
 
             <div className="space-y-2 md:col-span-2">
-              <span className="text-[11px] font-mono font-bold text-neutral-400 uppercase tracking-wider block">
+              <span className="text-[11px] font-mono font-bold text-neutral-300 uppercase tracking-wider block">
                 CREDENCIALES Y FORMACIÓN
               </span>
               <ul className="space-y-2.5 text-xs sm:text-sm text-neutral-200">
@@ -64,7 +64,7 @@ export const SobrePatriciaSection: React.FC = () => {
                   <span className="w-1.5 h-1.5 bg-[#E30613] mt-1.5 shrink-0" />
                   <div>
                     <strong className="text-white">Administradora de Empresas</strong>
-                    <span className="text-neutral-400 text-xs block sm:inline sm:ml-1.5">· Graduada en 2001 (Universidad Cooperativa de Colombia)</span>
+                    <span className="text-neutral-300 text-xs block sm:inline sm:ml-1.5">· Graduada en 2001 (Universidad Cooperativa de Colombia)</span>
                   </div>
                 </li>
 

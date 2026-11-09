@@ -47,7 +47,7 @@ export const StrategicFAQ: React.FC = () => {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-3">
               <span className="w-2.5 h-2.5 bg-[#E30613]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono">
+              <span className="text-xs font-bold uppercase tracking-widest text-neutral-800 font-mono">
                 CONSULTORIO DE NEGOCIO Y FAQS
               </span>
             </div>
@@ -167,7 +167,7 @@ export const StrategicFAQ: React.FC = () => {
 
               {/* Search Box */}
               <div className="relative w-full md:w-72">
-                <Search className="w-4 h-4 text-neutral-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                <Search className="w-4 h-4 text-neutral-600 absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
                   type="text"
                   placeholder="Buscar en respuestas..."
@@ -200,7 +200,7 @@ export const StrategicFAQ: React.FC = () => {
                         </span>
                         <div>
                           <div className="flex items-center gap-2 mb-2">
-                            <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-500 font-mono bg-neutral-100 px-2 py-0.5">
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-700 font-mono bg-neutral-100 px-2 py-0.5 border border-neutral-200">
                               {item.categoryLabel}
                             </span>
                           </div>

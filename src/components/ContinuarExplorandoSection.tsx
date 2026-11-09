@@ -54,7 +54,7 @@ export const ContinuarExplorandoSection: React.FC<ContinuarExplorandoProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header matching screenshot image_e467b601.png */}
         <div className="mb-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono block mb-2">
+          <span className="text-xs font-bold uppercase tracking-widest text-neutral-800 font-mono block mb-2">
             ARCHIVO RELACIONADO
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-neutral-900 tracking-tight">
@@ -71,10 +71,10 @@ export const ContinuarExplorandoSection: React.FC<ContinuarExplorandoProps> = ({
               className="p-8 bg-white border border-neutral-300 hover:border-black transition-all flex flex-col justify-between group cursor-pointer shadow-xs hover:shadow-md"
             >
               <div className="flex items-start justify-between gap-4 mb-6">
-                <span className="text-xs font-mono font-bold text-neutral-400 group-hover:text-[#E30613] transition-colors">
+                <span className="text-xs font-mono font-bold text-neutral-700 group-hover:text-[#E30613] transition-colors">
                   {c.num}
                 </span>
-                <div className="p-1 text-neutral-400 group-hover:text-black transition-colors">
+                <div className="p-1 text-neutral-600 group-hover:text-black transition-colors">
                   {c.isExternal ? (
                     <ExternalLink className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   ) : (

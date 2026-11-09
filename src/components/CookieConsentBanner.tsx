@@ -45,7 +45,7 @@ export const CookieConsentBanner: React.FC = () => {
                 href="./docs/politica-cookies.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#E30613] hover:underline font-semibold inline-flex items-center gap-0.5"
+                className="text-red-400 hover:text-white hover:underline font-bold inline-flex items-center gap-0.5"
               >
                 <span>Política de Cookies (CK-01)</span>
                 <ExternalLink className="w-2.5 h-2.5" />
@@ -57,20 +57,20 @@ export const CookieConsentBanner: React.FC = () => {
         <div className="flex items-center gap-2 shrink-0 w-full md:w-auto justify-end">
           <button
             onClick={handleDecline}
-            className="px-3 py-1.5 text-xs font-mono text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors border border-transparent hover:border-neutral-700 cursor-pointer"
+            className="px-3.5 py-1.5 text-xs font-mono font-medium text-neutral-200 bg-neutral-900 hover:text-white hover:bg-neutral-800 transition-colors border border-neutral-700 cursor-pointer rounded-xs"
           >
             Solo necesarias
           </button>
           <button
             onClick={handleAccept}
-            className="px-4 py-1.5 text-xs font-mono font-bold bg-[#E30613] hover:bg-[#b8050f] text-white transition-colors cursor-pointer shadow-xs"
+            className="px-4 py-1.5 text-xs font-mono font-bold bg-[#E30613] hover:bg-[#b8050f] text-white transition-colors cursor-pointer shadow-xs rounded-xs"
           >
             Aceptar todas
           </button>
           <button
             onClick={handleDecline}
             aria-label="Cerrar aviso de cookies"
-            className="p-1 text-neutral-500 hover:text-white transition-colors cursor-pointer md:hidden"
+            className="p-1 text-neutral-300 hover:text-white transition-colors cursor-pointer md:hidden"
           >
             <X className="w-4 h-4" />
           </button>

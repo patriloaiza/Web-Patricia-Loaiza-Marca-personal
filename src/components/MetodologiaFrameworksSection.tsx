@@ -16,7 +16,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
         {/* Kicker */}
         <div className="flex items-center gap-2 mb-3">
           <span className="w-2.5 h-2.5 bg-[#E30613]" />
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono">
+          <span className="text-xs font-bold uppercase tracking-widest text-neutral-800 font-mono">
             RIGOR METODOLÓGICO Y ATRIBUCIÓN
           </span>
         </div>
@@ -68,7 +68,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                     <span className="px-2.5 py-1 bg-[#E30613] text-white text-[11px] font-black uppercase tracking-wider font-mono">
                       AUTORÍA PROPIA REGISTRADA
                     </span>
-                    <span className="text-xs font-mono font-bold text-neutral-500">
+                    <span className="text-xs font-mono font-bold text-neutral-700">
                       POR PATRICIA LOAIZA
                     </span>
                   </div>
@@ -107,7 +107,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                     <span className="px-2.5 py-1 bg-black text-white text-[11px] font-black uppercase tracking-wider font-mono">
                       MARCO EXTERNO ADAPTADO
                     </span>
-                    <span className="text-xs font-mono font-bold text-neutral-500">
+                    <span className="text-xs font-mono font-bold text-neutral-700">
                       CRÉDITO Y ATRIBUCIÓN
                     </span>
                   </div>
@@ -175,7 +175,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                 <span className="px-2.5 py-1 bg-[#E30613] text-white text-[11px] font-black uppercase tracking-wider">
                   METODOLOGÍA REGISTRADA
                 </span>
-                <span className="text-xs font-bold text-neutral-500 font-mono">
+                <span className="text-xs font-bold text-neutral-800 font-mono">
                   5 FASES ESTRUCTURADAS
                 </span>
               </div>
@@ -195,7 +195,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                       <span className="text-xs font-mono font-black text-[#E30613]">
                         {stage.phase}
                       </span>
-                      <span className="text-xs font-mono font-bold text-neutral-400">
+                      <span className="text-xs font-mono font-bold text-neutral-600">
                         {stage.number}
                       </span>
                     </div>
@@ -203,7 +203,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                     <h3 className="text-base font-bold text-neutral-900 mb-1 leading-snug">
                       {stage.title}
                     </h3>
-                    <p className="text-[11px] font-semibold text-neutral-500 uppercase tracking-wider mb-3">
+                    <p className="text-[11px] font-semibold text-neutral-700 uppercase tracking-wider mb-3">
                       {stage.subtitle}
                     </p>
                     <p className="text-xs text-neutral-600 leading-relaxed mb-4">
@@ -212,7 +212,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                   </div>
 
                   <div className="pt-3 border-t border-neutral-100">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-1.5 font-mono">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-700 block mb-1.5 font-mono">
                       ENTREGABLES:
                     </span>
                     <ul className="space-y-1">
@@ -234,7 +234,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
         <div className="mt-14 pt-12 border-t border-neutral-300">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 bg-black" />
-            <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 font-mono">
+            <span className="text-xs font-bold uppercase tracking-wider text-neutral-800 font-mono">
               DINÁMICA OPERATIVA DE SERVICIO
             </span>
           </div>
@@ -276,8 +276,8 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                     <strong className="block text-neutral-900 font-bold mb-0.5">Perfil de aplicación:</strong>
                     <span className="text-neutral-700">{mod.idealFor}</span>
                   </div>
-                  <div className="text-[11px] text-neutral-500">
-                    <strong className="text-neutral-700">Compromiso:</strong> {mod.commitment}
+                  <div className="text-[11px] text-neutral-700">
+                    <strong className="text-neutral-900">Compromiso:</strong> {mod.commitment}
                   </div>
                 </div>
               </div>

@@ -25,7 +25,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
           Cinco pilares de servicio para estructurar, posicionar y desarrollar tu negocio.
         </h2>
 
-        <p className="text-base text-neutral-400 max-w-3xl mb-14 leading-relaxed">
+        <p className="text-base text-neutral-300 max-w-3xl mb-14 leading-relaxed">
           Los pilares 1 al 4 son consultoría estratégica en modalidad colaborativa <span className="text-white font-semibold">«Lo hacemos juntos»</span> (la ejecución de las acciones acordadas es del cliente). El pilar 5 es implementación tecnológica <span className="text-white font-semibold">«Lo hago por ti»</span> (ecosistema digital llave en mano prediseñado y adaptado sobre GoHighLevel).
         </p>
 
@@ -51,7 +51,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
                     <span className="text-2xl sm:text-3xl font-black text-[#E30613] font-mono block group-hover:translate-x-1 transition-transform">
                       {srv.number}
                     </span>
-                    <span className="text-[10px] font-mono font-bold uppercase text-neutral-400 bg-neutral-800/90 px-2 py-0.5 border border-neutral-700">
+                    <span className="text-[10px] font-mono font-bold uppercase text-neutral-200 bg-neutral-800/90 px-2 py-0.5 border border-neutral-700">
                       LO HACEMOS JUNTOS
                     </span>
                   </div>
@@ -68,7 +68,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
 
                   {/* 1. Para quién es */}
                   <div className="pt-3 border-t border-neutral-800/80 mb-3">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-1.5 font-mono flex items-center gap-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-300 block mb-1.5 font-mono flex items-center gap-1">
                       <Target className="w-3 h-3 text-[#E30613]" />
                       <span>PARA QUIÉN ES:</span>
                     </span>
@@ -84,7 +84,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
 
                   {/* 2. Qué trabajamos */}
                   <div className="pt-3 border-t border-neutral-800/80 mb-3">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-1.5 font-mono flex items-center gap-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-300 block mb-1.5 font-mono flex items-center gap-1">
                       <Layers className="w-3 h-3 text-[#E30613]" />
                       <span>QUÉ TRABAJAMOS:</span>
                     </span>
@@ -100,7 +100,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
 
                   {/* 3. Qué te llevas (Entregables) */}
                   <div className="pt-3 border-t border-neutral-800/80 mb-4">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block mb-1.5 font-mono flex items-center gap-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-300 block mb-1.5 font-mono flex items-center gap-1">
                       <Package className="w-3 h-3 text-[#E30613]" />
                       <span>QUÉ TE LLEVAS (ENTREGABLES):</span>
                     </span>
@@ -148,14 +148,14 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
                 <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-white bg-[#E30613] px-2 py-0.5">
                   MODALIDAD: LO HAGO POR TI
                 </span>
-                <span className="text-xs text-neutral-400 font-mono">Tecnología base: GoHighLevel (GHL)</span>
+                <span className="text-xs text-neutral-300 font-mono">Tecnología base: GoHighLevel (GHL)</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-black text-white mb-2">
                 <a href="./pages/ecosistema-digital.html" className="hover:text-[#E30613] transition-colors">
                   {SERVICES[4].name}: {SERVICES[4].subname}
                 </a>
               </h3>
-              <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-4">
+              <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed mb-4">
                 {SERVICES[4].focus}
               </p>
               <div className="p-3 bg-neutral-950 border border-neutral-800 text-xs text-neutral-300">
@@ -167,7 +167,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
             </div>
 
             <div className="shrink-0 flex flex-col items-end gap-3 w-full lg:w-auto">
-              <div className="text-right hidden lg:block text-xs text-neutral-400">
+              <div className="text-right hidden lg:block text-xs text-neutral-300">
                 <span className="text-white font-bold block">Página web · Embudo · CRM · Automatizaciones</span>
                 <span>Configurado y listo para operar</span>
               </div>

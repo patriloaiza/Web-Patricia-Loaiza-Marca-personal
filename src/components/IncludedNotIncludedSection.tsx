@@ -9,7 +9,7 @@ export const IncludedNotIncludedSection: React.FC = () => {
         {/* Kicker */}
         <div className="flex items-center gap-2 mb-3">
           <span className="w-2.5 h-2.5 bg-[#E30613]" />
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono">
+          <span className="text-xs font-bold uppercase tracking-widest text-neutral-800 font-mono">
             CLARIDAD Y ALCANCE DEL SERVICIO
           </span>
         </div>
@@ -46,15 +46,15 @@ export const IncludedNotIncludedSection: React.FC = () => {
 
             <div className="pt-4 border-t border-neutral-200">
               <div className="flex items-center gap-2 mb-3">
-                <UserX className="w-4 h-4 text-neutral-400" />
-                <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 font-mono">
+                <UserX className="w-4 h-4 text-neutral-600" />
+                <span className="text-xs font-bold uppercase tracking-wider text-neutral-700 font-mono">
                   NO ES PARA TI SI:
                 </span>
               </div>
               <ul className="space-y-2">
                 {INCLUDED_NOT_INCLUDED.notForWhom.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5 text-xs text-neutral-500">
-                    <X className="w-3.5 h-3.5 text-neutral-400 mt-0.5 shrink-0" />
+                  <li key={idx} className="flex items-start gap-2.5 text-xs text-neutral-700">
+                    <X className="w-3.5 h-3.5 text-neutral-600 mt-0.5 shrink-0" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -82,13 +82,13 @@ export const IncludedNotIncludedSection: React.FC = () => {
             </div>
 
             <div className="pt-4 border-t border-neutral-200">
-              <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 block mb-3 font-mono">
+              <span className="text-xs font-bold uppercase tracking-wider text-neutral-700 block mb-3 font-mono">
                 QUÉ NO INCLUYE (CERO AMBIGÜEDAD):
               </span>
               <ul className="space-y-2">
                 {INCLUDED_NOT_INCLUDED.notIncludes.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5 text-xs text-neutral-500">
-                    <X className="w-3.5 h-3.5 text-neutral-400 mt-0.5 shrink-0" />
+                  <li key={idx} className="flex items-start gap-2.5 text-xs text-neutral-700">
+                    <X className="w-3.5 h-3.5 text-neutral-600 mt-0.5 shrink-0" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -103,7 +103,7 @@ export const IncludedNotIncludedSection: React.FC = () => {
             <h4 className="text-sm sm:text-base font-bold text-white mb-1">
               ¿Quieres evaluar si existe encaje para trabajar juntos?
             </h4>
-            <p className="text-xs text-neutral-400">
+            <p className="text-xs text-neutral-300">
               Completa el prediagnóstico oficial y recibe la devolución estratégica de tu caso.
             </p>
           </div>
