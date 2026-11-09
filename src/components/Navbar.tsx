@@ -29,6 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={() => setActiveView(activeView === 'for-ai' ? 'main' : 'for-ai')}
             className="flex items-center gap-2 px-3 py-1 bg-[#E30613] hover:bg-[#c90510] text-white font-bold rounded text-xs transition-colors shrink-0 cursor-pointer shadow-xs"
+            aria-label="Acceder a la versión estructurada para agentes de inteligencia artificial"
           >
             {activeView === 'for-ai' ? (
               <>
@@ -55,12 +56,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           <img
             src="./assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg"
             alt="Patricia Loaiza®"
+            width={149}
+            height={44}
             className="h-11 w-auto object-contain"
           />
         </div>
 
         {/* Zone 2: Navigation Links (Max 5 items clean UX - Audit 3.2) */}
-        <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-neutral-800">
+        <nav aria-label="Navegación principal" className="hidden lg:flex items-center gap-6 text-sm font-medium text-neutral-800">
           <button
             onClick={() => { setActiveView('main'); setTimeout(() => { document.getElementById('sobre-patricia-trayectoria')?.scrollIntoView({ behavior: 'smooth' }); }, 50); }}
             className="hover:text-[#E30613] transition-colors whitespace-nowrap cursor-pointer"

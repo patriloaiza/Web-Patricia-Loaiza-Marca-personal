@@ -121,6 +121,9 @@ export const SOPLifecycle: React.FC = () => {
             <img
               src="./assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg"
               alt="Logo Patricia Loaiza"
+              width={136}
+              height={40}
+              loading="lazy"
               className="h-10 w-auto object-contain shrink-0"
             />
             <div>
@@ -162,6 +165,9 @@ export const SOPLifecycle: React.FC = () => {
                 <img
                   src="./assets/aistudio/SOP_Crea_y_Monetiza_Proceso_prestacion_servicio_2ee86446.png"
                   alt="SOP Maestro de Prestación del Servicio"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
                   className="w-full h-auto object-contain rounded-lg"
                 />
               </div>

@@ -122,7 +122,7 @@ export const SobrePatriciaSection: React.FC = () => {
           <div className="lg:col-span-5 p-8 bg-white border-2 border-black shadow-[6px_6px_0px_0px_#0A0A0A] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-neutral-200">
-                <span className="text-xs font-bold uppercase tracking-widest text-neutral-400 font-mono">
+                <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 font-mono">
                   POSTURA OFICIAL
                 </span>
                 <Quote className="w-5 h-5 text-[#E30613]" />
@@ -138,13 +138,16 @@ export const SobrePatriciaSection: React.FC = () => {
                 <img
                   src="./assets/aistudio/Patri_Medio_cuerpo_web_745a0efc.webp"
                   alt="Patricia Loaiza"
+                  width={44}
+                  height={44}
+                  loading="lazy"
                   className="w-11 h-11 rounded-full object-cover object-top border-2 border-[#E30613] shadow-xs"
                 />
                 <div>
                   <span className="text-xs font-black uppercase tracking-wider text-neutral-900 font-mono block">
                     PATRICIA LOAIZA
                   </span>
-                  <span className="text-[11px] font-mono text-neutral-500">CONSULTORA DE NEGOCIOS</span>
+                  <span className="text-[11px] font-mono text-neutral-700 font-semibold">CONSULTORA DE NEGOCIOS</span>
                 </div>
               </div>
             </div>
@@ -167,7 +170,7 @@ export const SobrePatriciaSection: React.FC = () => {
                   <p className="text-xs text-neutral-600 leading-relaxed mb-2">
                     {principle.description}
                   </p>
-                  <span className="text-[10px] font-mono text-neutral-500 italic block">
+                  <span className="text-[10px] font-mono text-neutral-600 italic block">
                     "{principle.quote}"
                   </span>
                 </div>
@@ -180,14 +183,14 @@ export const SobrePatriciaSection: React.FC = () => {
         <div className="mb-16">
           <div className="flex items-center justify-between pb-4 mb-8 border-b border-neutral-200">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono block">
+              <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 font-mono block">
                 TRAYECTORIA INSTITUCIONAL Y DE DIRECCIÓN
               </span>
               <h3 className="text-2xl font-black text-neutral-900 tracking-tight mt-1">
                 Envergadura y roles de liderazgo comprobados
               </h3>
             </div>
-            <span className="text-xs font-mono font-semibold text-neutral-400 hidden sm:inline">
+            <span className="text-xs font-mono font-semibold text-neutral-600 hidden sm:inline">
               EXPERIENCIA Y ENVERGADURA COMPROBADA
             </span>
           </div>

@@ -14,13 +14,13 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
     <section id="sobre-patricia" className="relative pt-6 pb-16 bg-[#F7F7F7] border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb strip matching screenshot image_d2fe5d66.png */}
-        <div className="flex items-center justify-between text-xs tracking-wider uppercase text-neutral-400 font-semibold pb-4 mb-8 border-b border-neutral-200">
+        <div className="flex items-center justify-between text-xs tracking-wider uppercase text-neutral-600 font-semibold pb-4 mb-8 border-b border-neutral-200">
           <div className="flex items-center gap-2">
             <span>INICIO</span>
             <span>/</span>
             <span className="text-neutral-900 font-bold">SOBRE PATRICIA</span>
           </div>
-          <span className="text-neutral-500 font-mono text-[11px]">
+          <span className="text-neutral-700 font-mono text-[11px] font-semibold">
             BIOGRAFÍA OFICIAL
           </span>
         </div>
@@ -30,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
           {/* Left Column (7 cols): Editorial text + Credentials Strip below button */}
           <div className="lg:col-span-7 flex flex-col justify-start">
             {/* Kicker: — BIOGRAFÍA OFICIAL */}
-            <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-neutral-700 mb-4 font-mono">
+            <div className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-neutral-800 mb-4 font-mono">
               <span className="h-[2px] w-6 bg-neutral-900 inline-block" />
               <span>BIOGRAFÍA OFICIAL</span>
             </div>
@@ -85,8 +85,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
               </div>
 
               {/* Microcopy de reducción de riesgo (Auditoría UX / CRO) */}
-              <div className="flex items-center gap-2 text-xs text-neutral-500 font-medium">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+              <div className="flex items-center gap-2 text-xs text-neutral-700 font-medium">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0" />
                 <span>Toma 7–10 min. Recibes tu ruta recomendada (área prioritaria + siguiente paso). Sin costo inicial.</span>
               </div>
             </div>
@@ -96,7 +96,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
                 {/* Col 1: BASE PROFESIONAL */}
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block font-mono">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-700 block font-mono">
                     BASE PROFESIONAL
                   </span>
                   <div className="flex items-start gap-2">
@@ -114,7 +114,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
 
                 {/* Col 2: CREDENCIALES */}
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block font-mono">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-700 block font-mono">
                     CREDENCIALES
                   </span>
                   <div className="space-y-2.5">
@@ -155,7 +155,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
 
                 {/* Col 3: TRAYECTORIA */}
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 block font-mono">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-700 block font-mono">
                     TRAYECTORIA
                   </span>
                   <div className="space-y-2.5">
@@ -207,6 +207,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
                   <img
                     src={OFFICIAL_PHOTO}
                     alt="Patricia Loaiza · Consultora de marketing y negocios"
+                    width={440}
+                    height={540}
+                    loading="eager"
+                    fetchPriority="high"
                     className="max-h-[540px] w-full object-cover object-top mx-auto shadow-sm border border-neutral-200"
                   />
                 </div>

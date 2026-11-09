@@ -9,7 +9,7 @@ export const TuExperienciaSection: React.FC = () => {
         {/* Kicker */}
         <div className="flex items-center gap-2 mb-3">
           <span className="w-2.5 h-2.5 bg-[#E30613]" />
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono">
+          <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 font-mono">
             PUNTO DE PARTIDA Y PROBLEMAS QUE RESUELVO
           </span>
         </div>
@@ -32,10 +32,10 @@ export const TuExperienciaSection: React.FC = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-mono font-bold text-neutral-400 group-hover:text-[#E30613] transition-colors">
+                  <span className="text-xs font-mono font-bold text-neutral-700 group-hover:text-[#E30613] transition-colors">
                     SITUACIÓN {item.number}
                   </span>
-                  <AlertCircle className="w-4 h-4 text-neutral-400 group-hover:text-[#E30613] transition-colors" />
+                  <AlertCircle className="w-4 h-4 text-neutral-500 group-hover:text-[#E30613] transition-colors" />
                 </div>
 
                 <h3 className="text-base font-bold text-neutral-900 mb-2 leading-snug">

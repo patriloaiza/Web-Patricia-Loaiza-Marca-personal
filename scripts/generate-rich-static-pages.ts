@@ -202,9 +202,9 @@ const renderHeader = () => `
   <header style="background-color: #FFF; border-bottom: 1px solid #E5E5E5; position: sticky; top: 0; z-index: 50;">
     <div class="max-w-7xl px-4" style="display: flex; align-items: center; justify-content: space-between; height: 68px;">
       <a href="${BASE_URL}/" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-        <img src="../assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg" alt="Patricia Loaiza" style="height: 38px; object-fit: contain;" />
+        <img src="../assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg" alt="Patricia Loaiza" width="129" height="38" style="height: 38px; width: auto; object-fit: contain;" />
       </a>
-      <nav style="display: flex; align-items: center; gap: 20px;">
+      <nav aria-label="Navegación principal" style="display: flex; align-items: center; gap: 20px;">
         <a href="${BASE_URL}/#sobre-patricia-trayectoria" style="font-size: 13px; font-weight: 600; color: #262626; text-decoration: none;">Sobre Patricia</a>
         <a href="${BASE_URL}/#como-trabajo" style="font-size: 13px; font-weight: 600; color: #262626; text-decoration: none;">Cómo trabajo</a>
         <a href="${BASE_URL}/#areas-consultoria" style="font-size: 13px; font-weight: 700; color: #E30613; text-decoration: none;">Áreas de Consultoría</a>
@@ -250,14 +250,14 @@ const renderFooter = () => `
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 50px;">
         <!-- Col 1: Brand -->
         <div style="max-width: 320px;">
-          <img src="../assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg" alt="Patricia Loaiza" style="height: 34px; object-fit: contain; background: #FFF; padding: 4px 8px; border-radius: 2px; margin-bottom: 16px;" />
+          <img src="../assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg" alt="Patricia Loaiza" width="129" height="34" style="height: 34px; width: auto; object-fit: contain; background: #FFF; padding: 4px 8px; border-radius: 2px; margin-bottom: 16px;" />
           <p style="font-size: 12px; color: #FFF; font-style: italic; margin-bottom: 12px; font-weight: 600;">
             “Estrategia · Experiencia · Impacto. Tu experiencia. Tu método. Tu legado.”
           </p>
-          <p style="font-size: 12px; color: #A3A3A3; line-height: 1.6; margin-bottom: 16px;">
+          <p style="font-size: 12px; color: #D4D4D4; line-height: 1.6; margin-bottom: 16px;">
             Consultoría estratégica para profesionales y expertos senior (40 a 65 años) que buscan convertir su conocimiento en un negocio estructurado con inteligencia artificial y capacidad instalada.
           </p>
-          <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #737373;">
+          <div style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #A3A3A3;">
             <p style="margin: 3px 0;">Medellín, Colombia · Atención en toda Iberoamérica y España</p>
             <p style="margin: 3px 0;">Dominio oficial: <strong style="color: #FFF;">soypatricialoaiza.com</strong></p>
             <p style="margin: 3px 0;">Contacto: <a href="mailto:hola@soypatricialoaiza.com" style="color: #FFF; text-decoration: none;">hola@soypatricialoaiza.com</a></p>
@@ -1089,17 +1089,17 @@ const sobrePatriciaHtml = `<!doctype html>
       <!-- Postura Quote & Principles -->
       <div style="display: grid; grid-template-columns: 1fr; gap: 32px; margin-bottom: 50px;" class="grid-2-col">
         <div style="background-color: #FFF; border: 2px solid #0A0A0A; padding: 32px; box-shadow: 6px 6px 0px 0px #0A0A0A;">
-          <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 700; text-transform: uppercase; color: #737373; display: block; margin-bottom: 12px;">
+          <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 700; text-transform: uppercase; color: #404040; display: block; margin-bottom: 12px;">
             POSTURA OFICIAL
           </span>
           <blockquote style="font-size: 20px; font-weight: 800; color: #0A0A0A; line-height: 1.4; margin: 0 0 24px; font-style: italic;">
             “No vendo lo que la persona cree que necesita. Le muestro, a partir de lo que encontramos en su diagnóstico, qué necesita resolver primero y cómo puedo ayudarla a hacerlo.”
           </blockquote>
           <div style="display: flex; align-items: center; gap: 12px; border-top: 1px solid #E5E5E5; padding-top: 16px;">
-            <img src="../assets/aistudio/Patri_Medio_cuerpo_web_745a0efc.webp" alt="Patricia Loaiza" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid #E30613;" />
+            <img src="../assets/aistudio/Patri_Medio_cuerpo_web_745a0efc.webp" alt="Patricia Loaiza" width="48" height="48" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid #E30613;" />
             <div>
               <strong style="font-size: 13px; font-family: 'JetBrains Mono', monospace; font-weight: 900; display: block; color: #0A0A0A;">PATRICIA LOAIZA</strong>
-              <span style="font-size: 11px; color: #737373; font-family: 'JetBrains Mono', monospace;">CONSULTORA DE NEGOCIOS</span>
+              <span style="font-size: 11px; color: #404040; font-family: 'JetBrains Mono', monospace; font-weight: 600;">CONSULTORA DE NEGOCIOS</span>
             </div>
           </div>
         </div>

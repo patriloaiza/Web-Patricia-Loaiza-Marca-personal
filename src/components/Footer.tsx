@@ -30,6 +30,9 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
               <img
                 src="./assets/aistudio/Logo_horizontal_fondo_negro_17c39b50.jpeg"
                 alt="Patricia Loaiza®"
+                width={136}
+                height={40}
+                loading="lazy"
                 className="h-10 w-auto object-contain"
               />
             </div>
@@ -38,14 +41,14 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
               "Estrategia · Experiencia · Impacto. Tu experiencia. Tu método. Tu legado."
             </p>
 
-            <p className="text-neutral-400 text-xs leading-relaxed max-w-sm">
+            <p className="text-neutral-300 text-xs leading-relaxed max-w-sm">
               Consultoría estratégica para profesionales y expertos senior (40 a 65 años) que buscan convertir su conocimiento en un negocio estructurado con inteligencia artificial y capacidad instalada.
             </p>
 
-            <div className="pt-2 text-neutral-500 text-[11px] space-y-1">
+            <div className="pt-2 text-neutral-400 text-[11px] space-y-1">
               <p>Medellín, Colombia · Atención en toda Iberoamérica y España</p>
               <p>Dominio oficial: <strong className="text-white">{BRAND_INFO.domain}</strong></p>
-              <p>Contacto: <a href={`mailto:${BRAND_INFO.contactEmail}`} className="text-white hover:text-[#E30613] transition-colors underline decoration-neutral-700 underline-offset-2">{BRAND_INFO.contactEmail}</a></p>
+              <p>Contacto: <a href={`mailto:${BRAND_INFO.contactEmail}`} className="text-white hover:text-[#E30613] transition-colors underline decoration-neutral-600 underline-offset-2">{BRAND_INFO.contactEmail}</a></p>
             </div>
           </div>
 
