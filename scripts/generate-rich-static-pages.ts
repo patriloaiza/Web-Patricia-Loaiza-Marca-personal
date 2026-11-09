@@ -431,6 +431,9 @@ PILARES_FULL_DETAIL.forEach((pilar, index) => {
   ${GA4_HEAD_SNIPPET}
   <title>${pilar.commercialName} | Patricia Loaiza · Consultora de Negocios</title>
   <meta name="description" content="${pilar.subname}. ${pilar.tagline}" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="${BASE_URL}/pages/${fileName}" />
   <link rel="icon" type="image/jpeg" href="../assets/aistudio/isotipo_fondo_transparente_f86013c4.jpeg" />
   
@@ -999,8 +1002,25 @@ const sobrePatriciaHtml = `<!doctype html>
   ${GA4_HEAD_SNIPPET}
   <title>Sobre Patricia Loaiza · Trayectoria, Postura y Credenciales</title>
   <meta name="description" content="Conoce la trayectoria de Patricia Loaiza: más de 30 años de experiencia acumulada conectando rigor administrativo corporativo (Nestlé), dirección de proyectos territoriales en FAO y Unión Europea, y consultoría estratégica." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="${BASE_URL}/pages/sobre-patricia.html" />
   <link rel="icon" type="image/jpeg" href="../assets/aistudio/isotipo_fondo_transparente_f86013c4.jpeg" />
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="${BASE_URL}/pages/sobre-patricia.html" />
+  <meta property="og:title" content="Sobre Patricia Loaiza · Trayectoria, Postura y Credenciales" />
+  <meta property="og:description" content="Más de 30 años de experiencia acumulada conectando rigor corporativo, dirección de proyectos territoriales y consultoría de negocios." />
+  <meta property="og:image" content="${BASE_URL}/assets/aistudio/Patri_Medio_cuerpo_web_745a0efc.webp" />
+  <meta property="og:site_name" content="Patricia Loaiza · Consultora de Marketing y Negocios" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sobre Patricia Loaiza · Trayectoria, Postura y Credenciales" />
+  <meta name="twitter:description" content="Más de 30 años de experiencia acumulada conectando rigor corporativo, dirección de proyectos territoriales y consultoría de negocios." />
+  <meta name="twitter:image" content="${BASE_URL}/assets/aistudio/Patri_Medio_cuerpo_web_745a0efc.webp" />
   <style>${COMMON_CSS}</style>
 </head>
 <body>
@@ -1176,8 +1196,25 @@ const creaYMonetizaHtml = `<!doctype html>
   ${GA4_HEAD_SNIPPET}
   <title>Metodología Crea y Monetiza® · 5 Fases Propietarias</title>
   <meta name="description" content="Conoce la Metodología Crea y Monetiza®: un sistema estructurado en 5 fases propietarias para transformar conocimiento senior en ofertas productizadas y sistemas comerciales gobernables con IA." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="${BASE_URL}/pages/crea-y-monetiza.html" />
   <link rel="icon" type="image/jpeg" href="../assets/aistudio/isotipo_fondo_transparente_f86013c4.jpeg" />
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="${BASE_URL}/pages/crea-y-monetiza.html" />
+  <meta property="og:title" content="Metodología Crea y Monetiza® · 5 Fases Propietarias" />
+  <meta property="og:description" content="Sistema estructurado en 5 fases propietarias para transformar conocimiento senior en ofertas productizadas y sistemas comerciales gobernables con IA." />
+  <meta property="og:image" content="${BASE_URL}/assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg" />
+  <meta property="og:site_name" content="Patricia Loaiza · Metodología Crea y Monetiza®" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Metodología Crea y Monetiza® · 5 Fases Propietarias" />
+  <meta name="twitter:description" content="Sistema estructurado en 5 fases propietarias para transformar conocimiento senior en ofertas productizadas y sistemas comerciales gobernables con IA." />
+  <meta name="twitter:image" content="${BASE_URL}/assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg" />
   <style>${COMMON_CSS}</style>
 </head>
 <body>
