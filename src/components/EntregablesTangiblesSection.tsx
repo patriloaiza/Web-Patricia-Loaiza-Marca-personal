@@ -32,7 +32,7 @@ export const EntregablesTangiblesSection: React.FC<EntregablesTangiblesSectionPr
         {/* Kicker */}
         <div className="flex items-center gap-2 mb-3">
           <span className="w-2.5 h-2.5 bg-[#E30613]" />
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono">
+          <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 font-mono">
             QUÉ TE LLEVAS · ACTIVOS Y TRANSFORMACIÓN
           </span>
         </div>
@@ -144,7 +144,7 @@ export const EntregablesTangiblesSection: React.FC<EntregablesTangiblesSectionPr
 
             <div className="mt-6 pt-4 border-t border-neutral-800 flex items-center justify-between text-xs text-neutral-400">
               <span>Herramientas metodológicas de IA para operar y delegar con control.</span>
-              <span className="font-mono text-[#E30613] font-bold">AUTONOMÍA TOTAL</span>
+              <span className="font-mono text-red-400 font-bold">AUTONOMÍA TOTAL</span>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ export const EntregablesTangiblesSection: React.FC<EntregablesTangiblesSectionPr
         {/* PARTE 2: ENTREGABLES Y TRANSFORMACIÓN DETALLADA POR PILAR */}
         <div className="border-t-2 border-black pt-12">
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 font-mono">
+            <span className="text-xs font-bold uppercase tracking-wider text-neutral-700 font-mono">
               DETALLE POR PILAR DE SERVICIO
             </span>
           </div>
@@ -174,7 +174,7 @@ export const EntregablesTangiblesSection: React.FC<EntregablesTangiblesSectionPr
                       : 'bg-[#F7F7F7] text-neutral-800 border-neutral-300 hover:border-black'
                   }`}
                 >
-                  <span className={`text-[11px] font-mono font-bold block mb-1 ${isSelected ? 'text-[#E30613]' : 'text-neutral-500'}`}>
+                  <span className={`text-[11px] font-mono font-bold block mb-1 ${isSelected ? 'text-red-400' : 'text-neutral-700'}`}>
                     PILAR {p.pilarNumber}
                   </span>
                   <strong className="text-xs block leading-snug line-clamp-1">
@@ -193,7 +193,7 @@ export const EntregablesTangiblesSection: React.FC<EntregablesTangiblesSectionPr
                 <div className="flex items-center gap-2 mb-1.5">
                   <span className="text-xs font-mono font-black text-[#E30613]">PILAR {activePilar.pilarNumber}</span>
                   <span className="w-1.5 h-1.5 bg-[#E30613]" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-neutral-500 font-mono">
+                  <span className="text-xs font-bold uppercase tracking-wider text-neutral-700 font-mono">
                     {activePilar.subname}
                   </span>
                 </div>
@@ -276,7 +276,7 @@ export const EntregablesTangiblesSection: React.FC<EntregablesTangiblesSectionPr
                     ))}
                   </ul>
                 </div>
-                <div className="mt-4 pt-3 border-t border-neutral-200 text-[11px] text-neutral-500 font-mono">
+                <div className="mt-4 pt-3 border-t border-neutral-200 text-[11px] text-neutral-700 font-mono">
                   Tablero Kanban + Grabaciones activas
                 </div>
               </div>

@@ -192,7 +192,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
               <li>
                 <a
                   href="./pages/ecosistema-digital.html"
-                  className="hover:text-white transition-colors text-left block text-[#E30613]"
+                  className="hover:text-white transition-colors text-left block text-red-400"
                 >
                   Pilar 5: Ecosistema Llave en Mano
                 </a>
@@ -214,7 +214,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                   href={BRAND_INFO.prediagnosticoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer text-[#E30613] font-semibold"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 cursor-pointer text-red-400 font-semibold"
                 >
                   <span>Prediagnóstico Oficial</span>
                   <ExternalLink className="w-3 h-3" />
@@ -249,7 +249,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-400 group"
                   title="Abrir PDF oficial de Política de Tratamiento de Datos"
                 >
-                  <FileText className="w-3.5 h-3.5 text-neutral-500 shrink-0" />
+                  <FileText className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
                   <span className="group-hover:underline">Política de Tratamiento de Datos (PL-01)</span>
                 </a>
               </li>
@@ -261,7 +261,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-400 group"
                   title="Abrir PDF oficial de Aviso de Privacidad"
                 >
-                  <FileText className="w-3.5 h-3.5 text-neutral-500 shrink-0" />
+                  <FileText className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
                   <span className="group-hover:underline">Aviso de Privacidad (AV-01)</span>
                 </a>
               </li>
@@ -273,7 +273,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-400 group"
                   title="Abrir PDF oficial de Política de Cookies"
                 >
-                  <FileText className="w-3.5 h-3.5 text-neutral-500 shrink-0" />
+                  <FileText className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
                   <span className="group-hover:underline">Política de Cookies (CK-01)</span>
                 </a>
               </li>
@@ -282,42 +282,42 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
         </div>
 
         {/* Bottom Legal Notice */}
-        <div className="pt-10 mt-10 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500">
+        <div className="pt-10 mt-10 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-neutral-400">
           <p>© 2026 PATRICIA LOAIZA®. METODOLOGÍA CREA Y MONETIZA®. DOMINIO: soypatricialoaiza.com. TODOS LOS DERECHOS RESERVADOS.</p>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-mono text-[11px]">
             <a 
               href="./docs/aviso-privacidad.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-neutral-200 transition-colors underline-offset-2 hover:underline"
+              className="text-neutral-400 hover:text-white transition-colors underline-offset-2 hover:underline"
             >
               Aviso Legal & Privacidad (AV-01)
             </a>
-            <span className="text-neutral-700">·</span>
+            <span className="text-neutral-600">·</span>
             <a 
               href="./docs/politica-tratamiento-datos.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-neutral-200 transition-colors underline-offset-2 hover:underline"
+              className="text-neutral-400 hover:text-white transition-colors underline-offset-2 hover:underline"
             >
               Política de Tratamiento de Datos (PL-01)
             </a>
-            <span className="text-neutral-700">·</span>
+            <span className="text-neutral-600">·</span>
             <a 
               href="./docs/autorizacion-tratamiento-datos.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-[#E30613] text-neutral-400 font-semibold transition-colors underline-offset-2 hover:underline"
+              className="hover:text-white text-neutral-300 font-semibold transition-colors underline-offset-2 hover:underline"
               title="Autorización para el Tratamiento de Datos Personales"
             >
               Autorización Tratamiento de Datos Personales (AT-01)
             </a>
-            <span className="text-neutral-700">·</span>
+            <span className="text-neutral-600">·</span>
             <a 
               href="./docs/politica-cookies.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-neutral-200 transition-colors underline-offset-2 hover:underline"
+              className="text-neutral-400 hover:text-white transition-colors underline-offset-2 hover:underline"
               title="Política de Cookies"
             >
               Política de Cookies (CK-01)

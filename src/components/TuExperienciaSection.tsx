@@ -35,7 +35,7 @@ export const TuExperienciaSection: React.FC = () => {
                   <span className="text-xs font-mono font-bold text-neutral-700 group-hover:text-[#E30613] transition-colors">
                     SITUACIÓN {item.number}
                   </span>
-                  <AlertCircle className="w-4 h-4 text-neutral-500 group-hover:text-[#E30613] transition-colors" />
+                  <AlertCircle className="w-4 h-4 text-neutral-700 group-hover:text-[#E30613] transition-colors" />
                 </div>
 
                 <h3 className="text-base font-bold text-neutral-900 mb-2 leading-snug">
@@ -69,7 +69,7 @@ export const TuExperienciaSection: React.FC = () => {
         {/* Empathy & Diagnostic Bridge Note */}
         <div className="p-6 sm:p-8 bg-neutral-900 text-white flex flex-col lg:flex-row items-center justify-between gap-6 border-l-4 border-[#E30613]">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-2 text-xs font-bold uppercase tracking-wider text-[#E30613] font-mono">
+            <div className="flex items-center gap-2 mb-2 text-xs font-bold uppercase tracking-wider text-red-400 font-mono">
               <Compass className="w-4 h-4" />
               <span>EL PRIMER PASO NUNCA ES CONTRATAR MÁS HERRAMIENTAS</span>
             </div>

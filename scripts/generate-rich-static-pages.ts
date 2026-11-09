@@ -304,7 +304,7 @@ const renderFooter = () => `
             <li><a href="./marca-personal.html" style="color: #A3A3A3; text-decoration: none;">Pilar 2: Marca Personal</a></li>
             <li><a href="./sistema-de-contenidos.html" style="color: #A3A3A3; text-decoration: none;">Pilar 3: Sistema de Contenidos</a></li>
             <li><a href="./dia-de-negocios-digitales.html" style="color: #A3A3A3; text-decoration: none;">Pilar 4: Día de Negocios Digitales</a></li>
-            <li><a href="./ecosistema-digital.html" style="color: #E30613; text-decoration: none;">Pilar 5: Ecosistema Llave en Mano</a></li>
+            <li><a href="./ecosistema-digital.html" style="color: #f87171; text-decoration: none;">Pilar 5: Ecosistema Llave en Mano</a></li>
           </ul>
         </div>
 
@@ -316,7 +316,7 @@ const renderFooter = () => `
           </div>
           <ul style="list-style: none; padding: 0; margin: 0; font-size: 12px; line-height: 2.2;">
             <li>
-              <a href="${PREDIAGNOSTICO_BASE}?utm_source=seo&utm_medium=footer&utm_campaign=prediagnostico" target="_blank" rel="noopener noreferrer" style="color: #E30613; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 5px;">
+              <a href="${PREDIAGNOSTICO_BASE}?utm_source=seo&utm_medium=footer&utm_campaign=prediagnostico" target="_blank" rel="noopener noreferrer" style="color: #f87171; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 5px;">
                 <span>Prediagnóstico Oficial</span>
                 ${ICONS.externalLink}
               </a>
@@ -328,7 +328,7 @@ const renderFooter = () => `
               </a>
             </li>
             <li style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #1F1F1F;">
-              <a href="../docs/autorizacion-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #E30613; text-decoration: none; display: flex; align-items: center; gap: 6px;" title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales">
+              <a href="../docs/autorizacion-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #f87171; text-decoration: none; display: flex; align-items: center; gap: 6px;" title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales">
                 ${ICONS.shield}
                 <span>Autorización Tratamiento de Datos Personales</span>
               </a>
@@ -352,7 +352,7 @@ const renderFooter = () => `
         </div>
       </div>
 
-      <div style="border-top: 1px solid #1F1F1F; padding-top: 24px; text-align: center; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #525252;">
+      <div style="border-top: 1px solid #1F1F1F; padding-top: 24px; text-align: center; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #A3A3A3;">
         © 2026 PATRICIA LOAIZA®. TODOS LOS DERECHOS RESERVADOS. METODOLOGÍA CREA Y MONETIZA®. DOMINIO OFICIAL: SOYPATRICIALOAIZA.COM
       </div>
     </div>
@@ -366,11 +366,11 @@ const renderFooter = () => `
           PRIVACIDAD & USO DE COOKIES EN SOYPATRICIALOAIZA.COM
         </span>
         <p style="font-size: 12px; color: #A3A3A3; margin: 0; line-height: 1.4;">
-          Utilizamos cookies propias y de analítica (Google Analytics 4) para medir el tráfico agregado y asegurar el funcionamiento óptimo de la web. Puedes consultar los detalles en nuestra <a href="../docs/politica-cookies.pdf" target="_blank" rel="noopener noreferrer" style="color: #E30613; text-decoration: underline;">Política de Cookies (CK-01) ↗</a>.
+          Utilizamos cookies propias y de analítica (Google Analytics 4) para medir el tráfico agregado y asegurar el funcionamiento óptimo de la web. Puedes consultar los detalles en nuestra <a href="../docs/politica-cookies.pdf" target="_blank" rel="noopener noreferrer" style="color: #f87171; text-decoration: underline;">Política de Cookies (CK-01) ↗</a>.
         </p>
       </div>
       <div style="display: flex; align-items: center; gap: 8px;">
-        <button onclick="dismissCookies('essential')" style="background: transparent; border: 1px solid #404040; color: #A3A3A3; font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 700; padding: 8px 14px; cursor: pointer; text-transform: uppercase;">
+        <button onclick="dismissCookies('essential')" style="background: transparent; border: 1px solid #404040; color: #E5E5E5; font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 700; padding: 8px 14px; cursor: pointer; text-transform: uppercase;">
           Solo necesarias
         </button>
         <button onclick="dismissCookies('all')" style="background: #E30613; border: 1px solid #E30613; color: #FFF; font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 800; padding: 8px 16px; cursor: pointer; text-transform: uppercase;">
@@ -574,7 +574,7 @@ PILARES_FULL_DETAIL.forEach((pilar, index) => {
         <!-- Modality & Rules Card -->
         <div style="background-color: #171717; color: #FFF; border: 2px solid #000; padding: 28px; box-shadow: 4px 4px 0px 0px #E30613;">
           <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid #262626;">
-            <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 900; color: #E30613; text-transform: uppercase;">
+            <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 900; color: #f87171; text-transform: uppercase;">
               MODALIDAD OFICIAL DE TRABAJO
             </span>
             <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #A3A3A3;">REGLA OPERATIVA</span>
@@ -1045,7 +1045,7 @@ const sobrePatriciaHtml = `<!doctype html>
       <!-- Cuadro de Datos Rápidos -->
       <div style="background-color: #0A0A0A; color: #F5F5F5; border: 2px solid #000; padding: 28px; box-shadow: 6px 6px 0px 0px #E30613; margin-bottom: 48px;">
         <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #262626; padding-bottom: 12px; margin-bottom: 16px;">
-          <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 800; color: #E30613; text-transform: uppercase; letter-spacing: 0.05em;">
+          <span style="font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 800; color: #f87171; text-transform: uppercase; letter-spacing: 0.05em;">
             CUADRO DE DATOS RÁPIDOS · PERFIL AUDITADO
           </span>
           <span style="font-size: 10px; font-family: 'JetBrains Mono', monospace; color: #A3A3A3;">
@@ -1075,14 +1075,14 @@ const sobrePatriciaHtml = `<!doctype html>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 8px;">
                 <span style="width: 5px; height: 5px; background-color: #E30613; margin-top: 6px; flex-shrink: 0;"></span>
-                <span><strong style="color: #FFF;">Mentora autorizada de Universidad Online</strong> <a href="https://www.credly.com/users/patricia-loaiza" target="_blank" rel="noopener noreferrer" style="color: #E30613; text-decoration: underline; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 11px;">[Verificar en Credly ↗]</a></span>
+                <span><strong style="color: #FFF;">Mentora autorizada de Universidad Online</strong> <a href="https://www.credly.com/users/patricia-loaiza" target="_blank" rel="noopener noreferrer" style="color: #f87171; text-decoration: underline; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 11px;">[Verificar en Credly ↗]</a></span>
               </li>
             </ul>
           </div>
         </div>
         <div style="margin-top: 16px; pt-2; border-top: 1px solid #262626; display: flex; justify-content: space-between; align-items: center; font-size: 11px; font-family: 'JetBrains Mono', monospace; padding-top: 12px;">
           <span style="color: #D4D4D4;"><strong>TRAYECTORIA:</strong> Desde 1996: gestión corporativa, cooperación y consultoría. Más de 9 años como profesional independiente.</span>
-          <strong style="color: #E30613;">+30 AÑOS DE EXPERIENCIA INTEGRAL</strong>
+          <strong style="color: #f87171;">+30 AÑOS DE EXPERIENCIA INTEGRAL</strong>
         </div>
       </div>
 
@@ -1135,7 +1135,7 @@ const sobrePatriciaHtml = `<!doctype html>
           ${HITOS_EVOLUCION.map((h) => `
           <div style="background-color: #FAFAFA; border: 1px solid #E5E5E5; padding: 20px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span style="font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 800; color: #E30613; text-transform: uppercase;">
+              <span style="font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 800; color: #991B1B; text-transform: uppercase;">
                 ${h.organization}
               </span>
             </div>
@@ -1162,7 +1162,7 @@ const sobrePatriciaHtml = `<!doctype html>
           ${FORMACION_ACADEMICA.map((fa) => `
           <div style="background-color: #FAFAFA; border: 1px solid #E5E5E5; padding: 16px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-              <span style="font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 700; color: #E30613; text-transform: uppercase;">
+              <span style="font-size: 10px; font-family: 'JetBrains Mono', monospace; font-weight: 700; color: #991B1B; text-transform: uppercase;">
                 ${fa.year || 'TITULACIÓN'}
               </span>
               ${fa.status ? `<span style="font-size: 9px; font-family: 'JetBrains Mono', monospace; font-weight: 700; padding: 1px 4px; border-radius: 2px; ${fa.status === 'En proceso' ? 'background: #FEF3C7; color: #92400E;' : 'background: #D1FAE5; color: #065F46;'}">${fa.status}</span>` : ''}

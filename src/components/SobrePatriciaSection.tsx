@@ -14,7 +14,7 @@ export const SobrePatriciaSection: React.FC = () => {
         {/* Kicker */}
         <div className="flex items-center gap-2 mb-3">
           <span className="w-2.5 h-2.5 bg-[#E30613]" />
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono">
+          <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 font-mono">
             AUTORIDAD, POSTURA Y TRAYECTORIA
           </span>
         </div>
@@ -33,7 +33,7 @@ export const SobrePatriciaSection: React.FC = () => {
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 mb-5 border-b border-neutral-800">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 bg-[#E30613] animate-pulse" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#E30613] font-mono">
+              <span className="text-xs font-bold uppercase tracking-widest text-red-400 font-mono">
                 CUADRO DE DATOS RÁPIDOS · PERFIL AUDITADO
               </span>
             </div>
@@ -110,7 +110,7 @@ export const SobrePatriciaSection: React.FC = () => {
             <span className="font-mono text-neutral-300">
               <strong className="text-white">TRAYECTORIA:</strong> Desde 1996: gestión corporativa, cooperación y consultoría. Más de 9 años como profesional independiente en marketing y negocios.
             </span>
-            <span className="font-mono text-[#E30613] font-bold shrink-0">
+            <span className="font-mono text-red-400 font-bold shrink-0">
               +30 AÑOS DE EXPERIENCIA INTEGRAL
             </span>
           </div>
@@ -203,7 +203,7 @@ export const SobrePatriciaSection: React.FC = () => {
               >
                 <div>
                   <div className="flex items-center justify-between mb-3 pb-3 border-b border-neutral-100">
-                    <span className="text-[10px] font-mono font-bold uppercase text-[#E30613] bg-red-50 border border-red-200 px-2 py-0.5">
+                    <span className="text-[10px] font-mono font-bold uppercase text-red-800 bg-red-50 border border-red-200 px-2 py-0.5">
                       {item.tag}
                     </span>
                     <Briefcase className="w-4 h-4 text-neutral-400" />
@@ -247,7 +247,7 @@ export const SobrePatriciaSection: React.FC = () => {
               <div key={idx} className="p-4 bg-neutral-50 border border-neutral-200 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-1 mb-1.5">
-                    <span className="text-[10px] font-mono font-bold text-[#E30613] uppercase block">
+                    <span className="text-[10px] font-mono font-bold text-red-800 uppercase block">
                       {item.year || "TITULACIÓN"}
                     </span>
                     {item.status && (

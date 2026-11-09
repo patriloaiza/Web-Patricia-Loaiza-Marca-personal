@@ -9,7 +9,7 @@ export const Process5StepsSection: React.FC = () => {
         {/* Kicker */}
         <div className="flex items-center gap-2 mb-3">
           <span className="w-2.5 h-2.5 bg-[#E30613]" />
-          <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 font-mono">
+          <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 font-mono">
             RUTA DE INTERVENCIÓN EN 5 PASOS
           </span>
         </div>

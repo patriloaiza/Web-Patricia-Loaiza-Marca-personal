@@ -15,7 +15,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
         {/* Kicker */}
         <div className="flex items-center gap-2 mb-4">
           <span className="w-2.5 h-2.5 bg-[#E30613]" />
-          <span className="text-xs font-bold uppercase tracking-widest text-[#E30613] font-mono">
+          <span className="text-xs font-bold uppercase tracking-widest text-red-400 font-mono">
             ÁREAS DE CONSULTORÍA
           </span>
         </div>
@@ -62,7 +62,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
                     </a>
                   </h3>
 
-                  <p className="text-xs font-semibold text-[#E30613] mb-4 leading-tight">
+                  <p className="text-xs font-semibold text-red-400 mb-4 leading-tight">
                     {srv.subname}
                   </p>
 
