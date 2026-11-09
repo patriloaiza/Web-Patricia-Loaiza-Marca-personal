@@ -108,7 +108,7 @@ export const EntregablesTangiblesSection: React.FC<EntregablesTangiblesSectionPr
           <div className="p-8 bg-neutral-900 text-white border-2 border-black shadow-[6px_6px_0px_0px_#E30613] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-3 mb-4 border-b border-neutral-800">
-                <span className="text-[11px] font-mono font-black uppercase text-[#E30613] tracking-wider">
+                <span className="text-[11px] font-mono font-black uppercase text-red-400 tracking-wider">
                   {CLIENT_DELIVERY_INFRASTRUCTURE.aiPlatform.badge}
                 </span>
                 <span className="text-xs font-mono font-bold text-neutral-400 flex items-center gap-1.5">

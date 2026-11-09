@@ -96,7 +96,7 @@ export const SobrePatriciaSection: React.FC = () => {
                       href="https://www.credly.com/users/patricia-loaiza" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-[#E30613] hover:text-red-400 underline font-mono text-xs font-bold transition-colors"
+                      className="inline-flex items-center gap-1 text-red-400 hover:text-white underline font-mono text-xs font-bold transition-colors"
                     >
                       <span>[Verificar credencial en Credly ↗]</span>
                     </a>
@@ -274,7 +274,7 @@ export const SobrePatriciaSection: React.FC = () => {
                       href={item.credentialUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-[#E30613] hover:underline"
+                      className="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-red-800 hover:underline"
                     >
                       <span>Verificar en Credly</span>
                       <ExternalLink className="w-3 h-3" />

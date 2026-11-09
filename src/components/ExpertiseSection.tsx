@@ -143,7 +143,7 @@ export const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ onSelectPila
           >
             <div className="max-w-3xl">
               <div className="flex flex-wrap items-center gap-2 mb-2">
-                <span className="text-xl font-mono font-black text-[#E30613]">PILAR 05</span>
+                <span className="text-xl font-mono font-black text-red-400">PILAR 05</span>
                 <span className="w-1.5 h-1.5 bg-[#E30613]" />
                 <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-white bg-[#E30613] px-2 py-0.5">
                   MODALIDAD: LO HAGO POR TI

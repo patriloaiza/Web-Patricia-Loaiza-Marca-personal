@@ -153,7 +153,7 @@ export const MetodologiaFrameworksSection: React.FC = () => {
                   const [title, desc] = point.split(':');
                   return (
                     <div key={idx} className="p-4 bg-neutral-800/80 border border-neutral-700/80 rounded-xs">
-                      <span className="text-xs font-bold text-[#E30613] block mb-1 font-mono">
+                      <span className="text-xs font-bold text-red-400 block mb-1 font-mono">
                         0{idx + 1}. {title}
                       </span>
                       <p className="text-xs text-neutral-300 leading-relaxed">
