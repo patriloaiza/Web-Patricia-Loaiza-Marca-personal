@@ -230,7 +230,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                 <a
                   href="./docs/autorizacion-tratamiento-datos.pdf"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-300 group"
                   title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales"
                 >
@@ -242,7 +242,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                 <a
                   href="./docs/politica-tratamiento-datos.pdf"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-400 group"
                   title="Abrir PDF oficial de Política de Tratamiento de Datos"
                 >
@@ -254,7 +254,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                 <a
                   href="./docs/aviso-privacidad.pdf"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-400 group"
                   title="Abrir PDF oficial de Aviso de Privacidad"
                 >
@@ -266,7 +266,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                 <a
                   href="./docs/politica-cookies.pdf"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-400 group"
                   title="Abrir PDF oficial de Política de Cookies"
                 >

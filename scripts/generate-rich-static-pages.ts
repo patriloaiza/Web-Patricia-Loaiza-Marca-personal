@@ -328,23 +328,23 @@ const renderFooter = () => `
               </a>
             </li>
             <li style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #1F1F1F;">
-              <a href="../docs/autorizacion-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer" style="color: #E30613; text-decoration: none; display: flex; align-items: center; gap: 6px;" title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales">
+              <a href="../docs/autorizacion-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #E30613; text-decoration: none; display: flex; align-items: center; gap: 6px;" title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales">
                 ${ICONS.shield}
                 <span>Autorización Tratamiento de Datos Personales</span>
               </a>
             </li>
             <li>
-              <a href="../docs/politica-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer" style="color: #A3A3A3; text-decoration: none;" title="Abrir PDF oficial de Política de Tratamiento de Datos">
+              <a href="../docs/politica-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #A3A3A3; text-decoration: none;" title="Abrir PDF oficial de Política de Tratamiento de Datos">
                 Política de Tratamiento de Datos (PL-01)
               </a>
             </li>
             <li>
-              <a href="../docs/aviso-privacidad.pdf" target="_blank" rel="noopener noreferrer" style="color: #A3A3A3; text-decoration: none;" title="Abrir PDF oficial de Aviso de Privacidad">
+              <a href="../docs/aviso-privacidad.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #A3A3A3; text-decoration: none;" title="Abrir PDF oficial de Aviso de Privacidad">
                 Aviso de Privacidad (AV-01)
               </a>
             </li>
             <li>
-              <a href="../docs/politica-cookies.pdf" target="_blank" rel="noopener noreferrer" style="color: #A3A3A3; text-decoration: none;" title="Abrir PDF oficial de Política de Cookies">
+              <a href="../docs/politica-cookies.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #A3A3A3; text-decoration: none;" title="Abrir PDF oficial de Política de Cookies">
                 Política de Cookies (CK-01)
               </a>
             </li>

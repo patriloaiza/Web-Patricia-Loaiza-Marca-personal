@@ -3,31 +3,54 @@
 
 User-agent: *
 Allow: /
+# Exclusión estricta de documentos PDF de políticas legales para concentrar el presupuesto de indexación en páginas de negocio
+Disallow: /docs/
+Disallow: /*.pdf$
+Disallow: /assets/aistudio/*.pdf$
 
-# AI Models & Generative Engines Explicit Access (GEO/AEO)
+# Buscadores Principales
 User-agent: Googlebot
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+Disallow: /assets/aistudio/*.pdf$
 
 User-agent: Bingbot
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+Disallow: /assets/aistudio/*.pdf$
 
+# Modelos de Inteligencia Artificial y Motores Generativos (GEO / AEO)
 User-agent: GPTBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
 
 User-agent: Applebot
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
 
-# Sitemap Location
+# Sitemap Oficial (Únicamente páginas web canónicas)
 Sitemap: https://soypatricialoaiza.com/sitemap.xml

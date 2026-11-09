@@ -71,34 +71,8 @@
   <!-- Metodología Crea y Monetiza® -->
   <url>
     <loc>https://soypatricialoaiza.com/pages/crea-y-monetiza.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-  </url>
-
-  <!-- Documentos Legales y Privacidad -->
-  <url>
-    <loc>https://soypatricialoaiza.com/docs/autorizacion-tratamiento-datos.pdf</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://soypatricialoaiza.com/docs/politica-tratamiento-datos.pdf</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://soypatricialoaiza.com/docs/aviso-privacidad.pdf</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://soypatricialoaiza.com/docs/politica-cookies.pdf</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>
