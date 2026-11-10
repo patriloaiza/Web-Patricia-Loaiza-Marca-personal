@@ -73,9 +73,9 @@ export const TuExperienciaSection: React.FC = () => {
               <Compass className="w-4 h-4" />
               <span>EL PRIMER PASO NUNCA ES CONTRATAR MÁS HERRAMIENTAS</span>
             </div>
-            <h4 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
               Un negocio bien estructurado no necesita vender todo lo que sabes.
-            </h4>
+            </h3>
             <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
               Necesita convertir tus conocimientos más valiosos en soluciones comprensibles, rentables y fáciles de contratar. A través del prediagnóstico analizamos tu situación actual y definimos qué resolver primero.
             </p>

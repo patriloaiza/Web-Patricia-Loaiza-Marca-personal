@@ -56,9 +56,9 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
           <div className="lg:col-span-2 space-y-3">
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 bg-[#E30613]" />
-              <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
                 Identidad
-              </h4>
+              </h3>
             </div>
             <ul className="space-y-2 text-neutral-400">
               <li>
@@ -100,9 +100,9 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
           <div className="lg:col-span-2 space-y-3">
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 bg-[#E30613]" />
-              <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
                 Metodología
-              </h4>
+              </h3>
             </div>
             <ul className="space-y-2 text-neutral-400">
               <li>
@@ -152,9 +152,9 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
           <div className="lg:col-span-2 space-y-3">
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 bg-[#E30613]" />
-              <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
                 Cinco Pilares
-              </h4>
+              </h3>
             </div>
             <ul className="space-y-2 text-neutral-400">
               <li>
@@ -204,9 +204,9 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
           <div className="lg:col-span-2 space-y-3">
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 bg-[#E30613]" />
-              <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
                 Legal & IA
-              </h4>
+              </h3>
             </div>
             <ul className="space-y-2 text-neutral-400">
               <li>

@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={() => setActiveView(activeView === 'for-ai' ? 'main' : 'for-ai')}
             className="flex items-center gap-2 px-3 py-1 bg-[#E30613] hover:bg-[#c90510] text-white font-bold rounded text-xs transition-colors shrink-0 cursor-pointer shadow-xs"
-            aria-label="Acceder a la versión estructurada para agentes de inteligencia artificial"
+            aria-label={activeView === 'for-ai' ? 'Volver a vista web' : 'Los agentes de IA, click aquí'}
           >
             {activeView === 'for-ai' ? (
               <>

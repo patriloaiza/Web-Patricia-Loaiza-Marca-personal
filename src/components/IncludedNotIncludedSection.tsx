@@ -100,9 +100,9 @@ export const IncludedNotIncludedSection: React.FC = () => {
         {/* Pre-diagnostic invitation strip */}
         <div className="p-6 bg-neutral-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4 border-l-4 border-[#E30613]">
           <div>
-            <h4 className="text-sm sm:text-base font-bold text-white mb-1">
+            <h3 className="text-sm sm:text-base font-bold text-white mb-1">
               ¿Quieres evaluar si existe encaje para trabajar juntos?
-            </h4>
+            </h3>
             <p className="text-xs text-neutral-300">
               Completa el prediagnóstico oficial y recibe la devolución estratégica de tu caso.
             </p>
