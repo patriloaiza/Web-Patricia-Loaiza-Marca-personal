@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { ActiveView } from './types/index.ts';
 import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
@@ -12,10 +12,12 @@ import { SobrePatriciaSection } from './components/SobrePatriciaSection.tsx';
 import { StrategicFAQ } from './components/StrategicFAQ.tsx';
 import { ContinuarExplorandoSection } from './components/ContinuarExplorandoSection.tsx';
 import { Footer } from './components/Footer.tsx';
-import { ForAIView } from './components/ForAIView.tsx';
-import { PilarDetailPage } from './components/PilarDetailPage.tsx';
-import { LegalModal } from './components/LegalModal.tsx';
 import { CookieConsentBanner } from './components/CookieConsentBanner.tsx';
+
+// Code-splitting lazy loads to dramatically minimize initial mobile JS bundle
+const ForAIView = lazy(() => import('./components/ForAIView.tsx').then(m => ({ default: m.ForAIView })));
+const PilarDetailPage = lazy(() => import('./components/PilarDetailPage.tsx').then(m => ({ default: m.PilarDetailPage })));
+const LegalModal = lazy(() => import('./components/LegalModal.tsx').then(m => ({ default: m.LegalModal })));
 
 export default function App() {
   const [activeView, setActiveView] = useState<ActiveView>('main');
@@ -123,50 +125,61 @@ export default function App() {
       {/* Main View Router */}
       <main>
         {activeView === 'for-ai' ? (
-          <ForAIView 
-            onBackToHuman={() => setActiveView('main')} 
-            onSelectPilar={handleOpenPilar}
-          />
+          <Suspense fallback={<div className="min-h-screen bg-[#F7F7F7]" />}>
+            <ForAIView 
+              onBackToHuman={() => setActiveView('main')} 
+              onSelectPilar={handleOpenPilar}
+            />
+          </Suspense>
         ) : activeView === 'pilar-detail' ? (
-          <PilarDetailPage
-            pilarId={selectedPilarId}
-            onBackToHome={handleBackToMain}
-            onSelectPilar={(id) => {
-              setSelectedPilarId(id);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          />
+          <Suspense fallback={<div className="min-h-screen bg-[#F7F7F7]" />}>
+            <PilarDetailPage
+              pilarId={selectedPilarId}
+              onBackToHome={handleBackToMain}
+              onSelectPilar={(id) => {
+                setSelectedPilarId(id);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            />
+          </Suspense>
         ) : (
           <>
             {/* 2. Hero Section: Promesa + Para Quién + CTA con microcopy de reducción de riesgo + Marco de foto */}
             <Hero onExploreServices={scrollToServices} />
 
-            {/* 3. Problemas que resuelves (Puntos de partida con Resultado Deseado y Puente a Diagnóstico) */}
-            <TuExperienciaSection />
+            {/* Below-the-fold sections optimized with content-visibility auto for mobile rendering speed */}
+            <div className="content-auto">
+              {/* 3. Problemas que resuelves (Puntos de partida con Resultado Deseado y Puente a Diagnóstico) */}
+              <TuExperienciaSection />
 
-            {/* 4. Cómo trabajas en 5 pasos: Entender → Diagnosticar → Priorizar → Orientar/Transformar → Evolucionar */}
-            <Process5StepsSection />
+              {/* 4. Cómo trabajas en 5 pasos: Entender → Diagnosticar → Priorizar → Orientar/Transformar → Evolucionar */}
+              <Process5StepsSection />
 
-            {/* 5. Cuatro Áreas de Consultoría Productizada + Pilar 5 (Enlace directo a páginas de pilar) */}
-            <ExpertiseSection onSelectPilar={handleOpenPilar} />
+              {/* 5. Cuatro Áreas de Consultoría Productizada + Pilar 5 (Enlace directo a páginas de pilar) */}
+              <ExpertiseSection onSelectPilar={handleOpenPilar} />
+            </div>
 
-            {/* 6. Catálogo de Entregables Tangibles (Notion Portal + Plataforma IA + resumen con enlace a pilar) */}
-            <EntregablesTangiblesSection onSelectPilar={handleOpenPilar} />
+            <div className="content-auto">
+              {/* 6. Catálogo de Entregables Tangibles (Notion Portal + Plataforma IA + resumen con enlace a pilar) */}
+              <EntregablesTangiblesSection onSelectPilar={handleOpenPilar} />
 
-            {/* 7. Metodologías Propias y Créditos Explícitos (CREA Y MONETIZA® vs BMS Framework de Vilma Núñez) */}
-            <MetodologiaFrameworksSection />
+              {/* 7. Metodologías Propias y Créditos Explícitos (CREA Y MONETIZA® vs BMS Framework de Vilma Núñez) */}
+              <MetodologiaFrameworksSection />
 
-            {/* 8. Claridad de Encaje: ¿Es para ti? Qué incluye / Qué NO incluye */}
-            <IncludedNotIncludedSection />
+              {/* 8. Claridad de Encaje: ¿Es para ti? Qué incluye / Qué NO incluye */}
+              <IncludedNotIncludedSection />
+            </div>
 
-            {/* 9. Sobre Patricia: Autoridad, Postura, 4 Principios de Consultoría y Trayectoria Institucional unificada */}
-            <SobrePatriciaSection />
+            <div className="content-auto">
+              {/* 9. Sobre Patricia: Autoridad, Postura, 4 Principios de Consultoría y Trayectoria Institucional unificada */}
+              <SobrePatriciaSection />
 
-            {/* 10. Consultorio Estratégico (10 Preguntas y Respuestas) + FAQs de Contratación (People Also Ask) */}
-            <StrategicFAQ />
+              {/* 10. Consultorio Estratégico (10 Preguntas y Respuestas) + FAQs de Contratación (People Also Ask) */}
+              <StrategicFAQ />
 
-            {/* 11. Recursos y Continuar Explorando */}
-            <ContinuarExplorandoSection setActiveView={setActiveView} />
+              {/* 11. Recursos y Continuar Explorando */}
+              <ContinuarExplorandoSection setActiveView={setActiveView} />
+            </div>
           </>
         )}
       </main>
@@ -179,16 +192,18 @@ export default function App() {
       />
 
       {/* 13. Legal Modal Overlay */}
-      <LegalModal
-        isOpen={isLegalModalOpen}
-        initialDocId={legalDocId}
-        onClose={() => {
-          setIsLegalModalOpen(false);
-          if (window.location.hash.startsWith('#')) {
-            window.history.replaceState(null, '', window.location.pathname + window.location.search);
-          }
-        }}
-      />
+      <Suspense fallback={null}>
+        <LegalModal
+          isOpen={isLegalModalOpen}
+          initialDocId={legalDocId}
+          onClose={() => {
+            setIsLegalModalOpen(false);
+            if (window.location.hash.startsWith('#')) {
+              window.history.replaceState(null, '', window.location.pathname + window.location.search);
+            }
+          }}
+        />
+      </Suspense>
       {/* 14. Cookie Consent Notice */}
       <CookieConsentBanner />
     </div>

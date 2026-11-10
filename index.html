@@ -4,33 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Google tag (gtag.js) - Google Analytics 4 Oficial -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9YTEC9F7F"></script>
+    <!-- Critical Preloads for Mobile LCP and Performance -->
+    <link rel="preload" as="image" href="./assets/aistudio/Patri_Medio_cuerpo_web_745a0efc.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" />
+    </noscript>
+
+    <!-- Google tag (gtag.js) - Google Analytics 4 Oficial (Carga no bloqueante optimizada para móvil) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'G-L9YTEC9F7F', {
-        send_page_view: true
-      });
+      gtag('config', 'G-L9YTEC9F7F', { send_page_view: true });
+      
+      // Carga asíncrona no bloqueante de GA4
+      function initGA4() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-L9YTEC9F7F';
+        document.head.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(initGA4, { timeout: 2000 });
+      } else {
+        setTimeout(initGA4, 1000);
+      }
     </script>
-
-    <title>Patricia Loaiza · Consultora de marketing y negocios</title>
-    <meta name="description" content="Convierto tu experiencia profesional en una estrategia de negocio, una oferta clara y un sistema comercial estructurado. Metodología Crea y Monetiza®." />
-    <meta name="keywords" content="Patricia Loaiza, Crea y Monetiza, consultora de marketing y negocios, consultoría estratégica, monetización de servicios, profesionales senior, terapeutas, psicólogos, coaches" />
-    <meta name="author" content="Patricia Loaiza" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="msvalidate.01" content="6E483CBEA7439FACD222166AA3897C13" />
-    <link rel="canonical" href="https://soypatricialoaiza.com/" />
-    <link rel="icon" type="image/jpeg" href="./assets/aistudio/isotipo_fondo_transparente_f86013c4.jpeg" />
-
-    <!-- Google Fonts: Montserrat (Brand Manual Official Font) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
