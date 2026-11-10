@@ -3,12 +3,12 @@
 
 User-agent: *
 Allow: /
-# Exclusión estricta de documentos PDF de políticas legales para concentrar el presupuesto de indexación en páginas de negocio
+# Exclusión estricta de documentos PDF legales para concentrar el presupuesto de indexación en páginas de negocio
 Disallow: /docs/
 Disallow: /*.pdf$
 Disallow: /assets/aistudio/*.pdf$
 
-# Buscadores Principales
+# Buscadores Convencionales
 User-agent: Googlebot
 Allow: /
 Disallow: /docs/
@@ -21,8 +21,8 @@ Disallow: /docs/
 Disallow: /*.pdf$
 Disallow: /assets/aistudio/*.pdf$
 
-# Modelos de Inteligencia Artificial y Motores Generativos (GEO / AEO)
-User-agent: GPTBot
+# OpenAI / ChatGPT (OAI-SearchBot para búsqueda en vivo y citas en ChatGPT; ChatGPT-User y GPTBot)
+User-agent: OAI-SearchBot
 Allow: /
 Disallow: /docs/
 Disallow: /*.pdf$
@@ -32,25 +32,70 @@ Allow: /
 Disallow: /docs/
 Disallow: /*.pdf$
 
+User-agent: GPTBot
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
+# Perplexity AI (Motor de búsqueda con citas)
 User-agent: PerplexityBot
 Allow: /
 Disallow: /docs/
 Disallow: /*.pdf$
 
+# Anthropic (Claude y Claude Web Search)
 User-agent: ClaudeBot
 Allow: /
 Disallow: /docs/
 Disallow: /*.pdf$
 
+User-agent: Claude-Web
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
+# Google Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
+# Apple Intelligence
 User-agent: Applebot
 Allow: /
 Disallow: /docs/
 Disallow: /*.pdf$
 
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
+# Meta AI
 User-agent: Meta-ExternalAgent
 Allow: /
 Disallow: /docs/
 Disallow: /*.pdf$
 
-# Sitemap Oficial (Únicamente páginas web canónicas)
+User-agent: FacebookBot
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
+# Especificaciones estructuradas para LLMs y Agentes de IA
+# https://soypatricialoaiza.com/llms.txt
+# https://soypatricialoaiza.com/llms-full.txt
+
+# Sitemap Oficial (Páginas canónicas y recursos indexables)
 Sitemap: https://soypatricialoaiza.com/sitemap.xml
