@@ -71,9 +71,9 @@ export const SobrePatriciaSection: React.FC = () => {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 bg-[#E30613] mt-1.5 shrink-0" />
                   <div>
-                    <strong className="text-white">Consultora certificada de marketing y negocios</strong>
+                    <strong className="text-white">Consultora en certificación BMS de marketing y negocios</strong>
                     <span className="text-neutral-300 text-xs block sm:inline sm:ml-1.5">
-                      · Certificación BMS avalada por American Business College (<span className="text-amber-400 font-bold">En proceso</span>)
+                      · Certificación BMS avalada por American Business College (<span className="text-amber-400 font-bold">En curso</span>)
                     </span>
                   </div>
                 </li>
@@ -108,7 +108,7 @@ export const SobrePatriciaSection: React.FC = () => {
 
           <div className="mt-5 pt-4 border-t border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
             <span className="font-mono text-neutral-300">
-              <strong className="text-white">TRAYECTORIA:</strong> Desde 1996: gestión corporativa, cooperación y consultoría. Más de 9 años como profesional independiente en marketing y negocios.
+              <strong className="text-white">TRAYECTORIA:</strong> Desde 1996: gestión corporativa, cooperación y consultoría. Más de 17 años como consultora independiente en marketing y negocios (desde octubre de 2009).
             </span>
             <span className="font-mono text-red-400 font-bold shrink-0">
               +30 AÑOS DE EXPERIENCIA INTEGRAL

@@ -22,7 +22,7 @@ export const ContinuarExplorandoSection: React.FC<ContinuarExplorandoProps> = ({
     {
       num: "02",
       title: "Cuatro Territorios de Servicios",
-      description: "Estrategia de Negocio, Marca de Autoridad, Sistema de Contenido y Jornada de Negocio Digital.",
+      description: "Estrategia de Negocio, Marca de Autoridad, Sistema de Contenidos con IA y Día de Negocios Digitales.",
       action: () => {
         const el = document.getElementById('cuatro-servicios');
         if (el) el.scrollIntoView({ behavior: 'smooth' });

@@ -1081,7 +1081,7 @@ const sobrePatriciaHtml = `<!doctype html>
           </div>
         </div>
         <div style="margin-top: 16px; pt-2; border-top: 1px solid #262626; display: flex; justify-content: space-between; align-items: center; font-size: 11px; font-family: 'JetBrains Mono', monospace; padding-top: 12px;">
-          <span style="color: #D4D4D4;"><strong>TRAYECTORIA:</strong> Desde 1996: gestión corporativa, cooperación y consultoría. Más de 9 años como profesional independiente.</span>
+          <span style="color: #D4D4D4;"><strong>TRAYECTORIA:</strong> Desde 1996: gestión corporativa, cooperación y consultoría. Más de 17 años como consultora independiente en marketing y negocios (desde octubre de 2009).</span>
           <strong style="color: #f87171;">+30 AÑOS DE EXPERIENCIA INTEGRAL</strong>
         </div>
       </div>
@@ -1310,8 +1310,8 @@ const forAiHtml = `<!DOCTYPE html>
         "@id": "${BASE_URL}/#person",
         "name": "Patricia Loaiza",
         "url": "${BASE_URL}",
-        "jobTitle": "Consultora de Marketing y Negocios · Creadora de la Metodología Crea y Monetiza®",
-        "description": "Consultora estratégica con más de 30 años de experiencia integral (desde 1996) en gestión corporativa multinacional (Nestlé), formulación de proyectos territoriales (FAO ONU, CISP Unión Europea, Red Adelco) y más de 9 años de práctica independiente en consultoría para profesionales senior.",
+        "jobTitle": "Consultora de Marketing y Negocios · Creadora de la Metodología Propia Crea y Monetiza®",
+        "description": "Consultora estratégica con más de 30 años de experiencia integral laboral (desde 1996) en gestión corporativa multinacional (Nestlé), formulación de proyectos territoriales (FAO ONU, CISP Unión Europea, Red Adelco) y más de 17 años de consultoría independiente para profesionales senior (desde octubre de 2009).",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Medellín",
@@ -1378,15 +1378,15 @@ const forAiHtml = `<!DOCTYPE html>
         <h2 style="font-size: 20px; font-weight: 800; margin-bottom: 16px;">¿Quién es Patricia Loaiza?</h2>
         <ul style="line-height: 1.8; font-size: 14px; color: #D4D4D4;">
           <li><strong>Nombre profesional:</strong> Patricia Loaiza (también conocida como Patri Loaiza).</li>
-          <li><strong>Rol principal:</strong> Consultora de marketing y negocios · Creadora de la Metodología registrada CREA Y MONETIZA®.</li>
-          <li><strong>Sede y cobertura:</strong> Con sede en Medellín, Antioquia, Colombia. Atiende clientes en Colombia, Iberoamérica y España.</li>
-          <li><strong>Experiencia profesional acumulada:</strong> Más de 30 años desde 1996 en gestión corporativa y proyectos de desarrollo territorial, con más de 9 años como consultora independiente de negocios.</li>
+          <li><strong>Rol principal:</strong> Consultora de marketing y negocios · Creadora de la Metodología propia CREA Y MONETIZA®.</li>
+          <li><strong>Sede y cobertura:</strong> Con sede profesional en Medellín, Antioquia, Colombia. Consultoría y atención 100% online sin restricción geográfica para Colombia, Iberoamérica y España.</li>
+          <li><strong>Experiencia profesional acumulada:</strong> Más de 30 años de experiencia laboral total desde 1996 en gestión corporativa y proyectos de desarrollo territorial, con más de 17 años como consultora independiente de negocios (desde octubre de 2009).</li>
           <li><strong>Trayectoria institucional demostrable:</strong>
             <ul>
-              <li>Gestión y comercialización corporativa multinacional en <strong>Nestlé</strong> (1996).</li>
+              <li>Gestión y comercialización corporativa multinacional en <strong>Nestlé</strong> (1996 a 2006).</li>
               <li>Dirección de proyectos de desarrollo rural y cadenas de valor con la <strong>FAO de las Naciones Unidas</strong>.</li>
               <li>Cooperación internacional con <strong>CISP (Unión Europea)</strong> y la <strong>Red Adelco</strong>.</li>
-              <li>Mentora de negocios autorizada por <strong>Universidad Online (BMS)</strong> con credencial verificada en Credly.</li>
+              <li>Formación y certificación BMS en curso avalada por <strong>American Business College</strong> y Universidad Online con credenciales verificadas en Credly.</li>
             </ul>
           </li>
           <li><strong>Publicaciones oficiales registradas (con ISBN):</strong>
@@ -1402,9 +1402,9 @@ const forAiHtml = `<!DOCTYPE html>
       <!-- SECCIÓN 2: METODOLOGÍA CREA Y MONETIZA -->
       <section class="ai-box">
         <span class="ai-badge">02 · METODOLOGÍA PROPIETARIA</span>
-        <h2 style="font-size: 20px; font-weight: 800; margin-bottom: 16px;">Metodología CREA Y MONETIZA® (5 Fases)</h2>
+        <h2 style="font-size: 20px; font-weight: 800; margin-bottom: 16px;">Metodología Propia CREA Y MONETIZA® (5 Fases)</h2>
         <p style="font-size: 14px; line-height: 1.6; color: #D4D4D4; margin-bottom: 16px;">
-          Metodología registrada de 5 fases estructuradas creada por Patricia Loaiza para profesionales del conocimiento (consultores, terapeutas, psicólogos y expertos de 40 a 65 años) que buscan convertir su experiencia acumulada en ofertas productizadas de alto valor:
+          Metodología propia de 5 fases estructuradas creada por Patricia Loaiza para profesionales del conocimiento (consultores, terapeutas, psicólogos y expertos de 40 a 65 años) que buscan convertir su experiencia acumulada en ofertas productizadas de alto valor:
         </p>
         <ol style="line-height: 1.8; font-size: 14px; color: #D4D4D4;">
           <li><strong>Fase 1 · Radiografía y Diagnóstico Clínico:</strong> Auditoría del modelo actual, barreras de monetización y desorden de portafolio antes de prescribir intervenciones.</li>
@@ -1424,13 +1424,13 @@ const forAiHtml = `<!DOCTYPE html>
             <strong style="color: #F87171;">Pilar 01 · Estrategia de Negocio:</strong> Oferta, precio y ruta de ventas estructurada de tu consultoría. Modalidad colaborativa «Lo hacemos juntos». Diseña el portafolio productizado y la transición de horas a paquetes de alto valor.
           </div>
           <div style="background-color: #262626; padding: 16px;">
-            <strong style="color: #F87171;">Pilar 02 · Marca Personal:</strong> Posicionamiento, mensaje y conexión con la monetización. Manual Maestro de Marca, relato corporativo y arquetipo de alta autoridad.
+            <strong style="color: #F87171;">Pilar 02 · Marca de Autoridad:</strong> Posicionamiento, mensaje y conexión con la monetización. Manual Maestro de Marca, relato corporativo y arquetipo de alta autoridad.
           </div>
           <div style="background-color: #262626; padding: 16px;">
             <strong style="color: #F87171;">Pilar 03 · Sistema de Contenidos con IA:</strong> Voz, estrategia y producción de contenidos con inteligencia artificial. Brand Voice documentado (<code>brand-voice.md</code>), repositorio temático en Notion y ciclo de 30 piezas producidas.
           </div>
           <div style="background-color: #262626; padding: 16px;">
-            <strong style="color: #F87171;">Pilar 04 · Digital Business Day (Día de Negocios Digitales):</strong> Jornada intensiva 1 a 1 de 7 horas de estructuración y sistemas con IA para ordenar en un solo día oferta, procesos y automatizaciones.
+            <strong style="color: #F87171;">Pilar 04 · Día de Negocios Digitales:</strong> Jornada intensiva 1 a 1 de 7 horas de estructuración y sistemas con IA para ordenar en un solo día oferta, procesos y automatizaciones.
           </div>
           <div style="background-color: #262626; padding: 16px;">
             <strong style="color: #F87171;">Pilar 05 · Ecosistema Digital Llave en Mano:</strong> Implementación técnica en GoHighLevel (GHL) lista para operar: páginas de captación, automatizaciones de correo/WhatsApp y cobros integrados.

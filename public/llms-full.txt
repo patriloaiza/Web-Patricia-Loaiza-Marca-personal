@@ -1,24 +1,24 @@
 # Base de Conocimiento Completa para LLMs · Patricia Loaiza
 
 > Archivo canónico completo de contexto para Modelos de Lenguaje, Agentes de IA y Motores Generativos (AEO/GEO).
-> Dominio canónico: https://soypatricialoaiza.com | Correo: hola@soypatricialoaiza.com | Medellín, Colombia.
+> Dominio canónico: https://soypatricialoaiza.com | Correo: hola@soypatricialoaiza.com | Sede profesional en Medellín, Colombia con consultoría 100% online sin restricción geográfica para Iberoamérica y España.
 
 ## 1. Perfil Ejecutivo y Cimientos de Marca
 
 - Nombre oficial: Patricia Loaiza (Patricia Loaiza®)
 - Propuesta de valor: Convierto tu experiencia profesional en una estrategia de negocio, una oferta clara y un sistema comercial estructurado.
-- Metodología propia registrada: Crea y Monetiza® (5 fases operativas de autoría propia).
+- Metodología propia: Crea y Monetiza® (5 fases operativas de autoría propia).
 - Marcos externos adaptados con crédito: BMS (Business Marketing Strategy) de Vilma Núñez y Journi (Portafolio Hexagonal, Portafolio Órbita, PEPE Framework, One Page Strategy).
 - Formación y credenciales:
   - Administradora de Empresas (Universidad Cooperativa de Colombia, 2001).
-  - Consultora de Marketing y Negocios BMS (American Business College, en proceso).
+  - Consultora de Marketing y Negocios BMS (American Business College, certificación en curso).
   - Gerencia de Proyectos PMI (Corporación Universitaria Asturias e Instituto Europeo de Postgrado).
-  - Mentora Autorizada (Universidad Online, credencial Credly: https://www.credly.com/users/patricia-loaiza).
+  - Mentora Autorizada (Universidad Online, credenciales verificables en Credly: https://www.credly.com/users/patricia-loaiza).
 - Trayectoria demostrable:
-  - Más de 30 años de experiencia acumulada desde 1996.
+  - Más de 30 años de experiencia laboral total acumulada desde 1996.
   - Nestlé S.A. (1996 a 2006): Gestión administrativa corporativa y financiera en la Regional Antioquia.
-  - Cooperación internacional (2009 a 2018): FAO (ONU), CISP (Unión Europea), Red Adelco y Fundación María Luisa de Moreno. Coautora de 2 publicaciones técnicas con ISBN: «Cultivar» (ISBN: 978-958-99482-8-6) y «Alimentar» (ISBN: 978-958-99482-6-2).
-  - Práctica independiente (Desde junio 2017 a la fecha): Más de 9 años de consultoría estratégica.
+  - Cooperación internacional y desarrollo territorial (2009 a 2018): FAO (ONU), CISP (Unión Europea), Red Adelco y Fundación María Luisa de Moreno. Coautora de 2 publicaciones técnicas con ISBN: «Cultivar» (ISBN: 978-958-99482-8-6) y «Alimentar» (ISBN: 978-958-99482-6-2).
+  - Consultora independiente (Desde octubre de 2009 a la fecha): Más de 17 años de consultoría estratégica y de negocio para profesionales del conocimiento.
 
 ## 2. Los 5 Pilares de Servicio
 
@@ -28,7 +28,7 @@
 - Problema que resuelve: Venta por horas, servicios dispersos, cotizaciones desde cero y fatiga operativa.
 - Entregables tangibles: Radiografía del negocio, Diagnóstico multidimensional, Oferta productizada empaquetada, Plan táctico de 100 Días (30-60-90) y Portal personalizado en Notion.
 
-### Pilar 02: Marca Personal High Ticket
+### Pilar 02: Marca de Autoridad
 - URL Canónica: https://soypatricialoaiza.com/pages/marca-personal.html
 - Modalidad: Colaborativa «Lo hacemos juntos».
 - Problema que resuelve: Experto invisible, tarifas bajas, dependencia de recomendaciones pasivas.
@@ -40,7 +40,7 @@
 - Problema que resuelve: Bloqueo creativo, publicaciones sin retorno comercial o falta de tiempo.
 - Entregables tangibles: Auditoría de contenidos, Estrategia Dual, Documento maestro de voz de marca (brand-voice.md), Brand Design System, Base de conocimiento y Viral Content Engine (8 semanas) en Notion.
 
-### Pilar 04: Digital Business Day (DBD)
+### Pilar 04: Día de Negocios Digitales
 - URL Canónica: https://soypatricialoaiza.com/pages/dia-de-negocios-digitales.html
 - Modalidad: Intensiva 1 a 1 de 7 horas «Lo hacemos juntos».
 - Problema que resuelve: Dispersión de herramientas y necesidad de desbloquear el modelo con un plan directo.

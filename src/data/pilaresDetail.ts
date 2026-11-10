@@ -157,15 +157,15 @@ export const PILARES_FULL_DETAIL: PilarFullDetail[] = [
   },
 
   // ==========================================
-  // PILAR 2: MARCA PERSONAL
+  // PILAR 2: MARCA DE AUTORIDAD
   // ==========================================
   {
     id: "pilar-2",
     number: "02",
-    commercialName: "Marca Personal",
+    commercialName: "Marca de Autoridad",
     subname: "Posicionamiento, mensaje y conexión con la monetización de alto valor",
-    referenceService: "Marca Personal",
-    shortNavName: "Marca Personal",
+    referenceService: "Marca de Autoridad",
+    shortNavName: "Marca de Autoridad",
     tagline: "Posicionamiento, mensaje y conexión con la monetización de alto valor.",
     targetProfile: "Experto Invisible: terapeutas, psicólogos, consultores y profesionales consolidados con más de 10 a 20 años de experiencia que son excelentes en lo que hacen, pero cuya reputación no se proyecta con claridad en canales digitales y cobran por debajo de su valor.",
     priceTestimonials: "USD 1.500",
@@ -316,15 +316,15 @@ export const PILARES_FULL_DETAIL: PilarFullDetail[] = [
   },
 
   // ==========================================
-  // PILAR 3: SISTEMA DE CONTENIDOS
+  // PILAR 3: SISTEMA DE CONTENIDOS CON IA
   // ==========================================
   {
     id: "pilar-3",
     number: "03",
-    commercialName: "Sistema de Contenidos",
+    commercialName: "Sistema de Contenidos con IA",
     subname: "Voz, estrategia y producción de contenidos asistida por IA con retorno comercial",
-    referenceService: "Sistema de Contenidos",
-    shortNavName: "Sistema de Contenidos",
+    referenceService: "Sistema de Contenidos con IA",
+    shortNavName: "Sistema de Contenidos con IA",
     tagline: "Voz, estrategia y producción de contenidos asistida por IA con retorno comercial.",
     targetProfile: "Experto sin tiempo: profesional con conocimiento valioso que publica de forma aislada, siente bloqueo frente a la hoja en blanco o pierde horas redactando sin ver retorno comercial en clientes.",
     priceTestimonials: "USD 1.500",
@@ -518,7 +518,7 @@ export const PILARES_FULL_DETAIL: PilarFullDetail[] = [
   {
     id: "pilar-4",
     number: "04",
-    commercialName: "Día de Negocios Digitales: Sistemas Digitales con IA",
+    commercialName: "Día de Negocios Digitales",
     subname: "Jornada intensiva 1 a 1 de estructuración, activos de IA y plan 30-60-90",
     referenceService: "Día de Negocios Digitales",
     shortNavName: "Día de Negocios Digitales",

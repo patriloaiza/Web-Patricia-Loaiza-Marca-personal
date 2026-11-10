@@ -170,7 +170,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                   href="./pages/marca-personal.html"
                   className="hover:text-white transition-colors text-left block"
                 >
-                  Pilar 2: Marca Personal
+                  Pilar 2: Marca de Autoridad
                 </a>
               </li>
               <li>
@@ -178,7 +178,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                   href="./pages/sistema-de-contenidos.html"
                   className="hover:text-white transition-colors text-left block"
                 >
-                  Pilar 3: Sistema de Contenidos
+                  Pilar 3: Sistema de Contenidos con IA
                 </a>
               </li>
               <li>
@@ -194,7 +194,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
                   href="./pages/ecosistema-digital.html"
                   className="hover:text-white transition-colors text-left block text-red-400"
                 >
-                  Pilar 5: Ecosistema Llave en Mano
+                  Pilar 5: Ecosistema Digital Llave en Mano
                 </a>
               </li>
             </ul>
