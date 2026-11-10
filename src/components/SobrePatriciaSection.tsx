@@ -71,9 +71,9 @@ export const SobrePatriciaSection: React.FC = () => {
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 bg-[#E30613] mt-1.5 shrink-0" />
                   <div>
-                    <strong className="text-white">Consultora en certificación BMS de marketing y negocios</strong>
+                    <strong className="text-white">Certificación en BMS (Business Marketing Strategy)</strong>
                     <span className="text-neutral-300 text-xs block sm:inline sm:ml-1.5">
-                      · Certificación BMS avalada por American Business College (<span className="text-amber-400 font-bold">En curso</span>)
+                      · En proceso de presentar la certificación en American Business College (<span className="text-amber-400 font-bold">En proceso</span>)
                     </span>
                   </div>
                 </li>
@@ -98,7 +98,7 @@ export const SobrePatriciaSection: React.FC = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-red-400 hover:text-white underline font-mono text-xs font-bold transition-colors"
                     >
-                      <span>[Verificar credencial en Credly ↗]</span>
+                      <span>[Verificar insignia en Credly ↗]</span>
                     </a>
                   </div>
                 </li>

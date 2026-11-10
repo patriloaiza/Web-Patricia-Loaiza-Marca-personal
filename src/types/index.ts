@@ -21,8 +21,6 @@ export interface PilarFullDetail {
   shortNavName?: string;
   tagline: string;
   targetProfile: string;
-  priceTestimonials: string;
-  priceRange?: string;
   duration: string;
   modality: string;
   modalityBadge: 'LO HACEMOS JUNTOS' | 'LO HAGO POR TI';

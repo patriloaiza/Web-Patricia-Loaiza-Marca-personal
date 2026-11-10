@@ -464,12 +464,7 @@ PILARES_FULL_DETAIL.forEach((pilar, index) => {
       "url": "${BASE_URL}"
     },
     "description": "${pilar.subname}. ${pilar.tagline}",
-    "url": "${BASE_URL}/pages/${fileName}",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": "${pilar.priceTestimonials || 'Consultar'}"
-    }
+    "url": "${BASE_URL}/pages/${fileName}"
   }
   </script>
 
@@ -1067,7 +1062,7 @@ const sobrePatriciaHtml = `<!doctype html>
               </li>
               <li style="margin-bottom: 6px; display: flex; align-items: flex-start; gap: 8px;">
                 <span style="width: 5px; height: 5px; background-color: #E30613; margin-top: 6px; flex-shrink: 0;"></span>
-                <span><strong style="color: #FFF;">Consultora certificada de marketing y negocios</strong> <span style="color: #D4D4D4; font-size: 11px;">· Certificación BMS avalada por American Business College (<em style="color: #FBBF24;">En proceso</em>)</span></span>
+                <span><strong style="color: #FFF;">Certificación BMS (Business Marketing Strategy)</strong> <span style="color: #D4D4D4; font-size: 11px;">· En proceso de presentar la certificación en American Business College (<em style="color: #FBBF24;">En proceso</em>)</span></span>
               </li>
               <li style="margin-bottom: 6px; display: flex; align-items: flex-start; gap: 8px;">
                 <span style="width: 5px; height: 5px; background-color: #E30613; margin-top: 6px; flex-shrink: 0;"></span>
@@ -1075,7 +1070,7 @@ const sobrePatriciaHtml = `<!doctype html>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 8px;">
                 <span style="width: 5px; height: 5px; background-color: #E30613; margin-top: 6px; flex-shrink: 0;"></span>
-                <span><strong style="color: #FFF;">Mentora autorizada de Universidad Online</strong> <a href="https://www.credly.com/users/patricia-loaiza" target="_blank" rel="noopener noreferrer" style="color: #f87171; text-decoration: underline; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 11px;">[Verificar en Credly ↗]</a></span>
+                <span><strong style="color: #FFF;">Mentora autorizada de Universidad Online</strong> <a href="https://www.credly.com/users/patricia-loaiza" target="_blank" rel="noopener noreferrer" style="color: #f87171; text-decoration: underline; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 11px;">[Verificar insignia en Credly ↗]</a></span>
               </li>
             </ul>
           </div>
@@ -1386,7 +1381,8 @@ const forAiHtml = `<!DOCTYPE html>
               <li>Gestión y comercialización corporativa multinacional en <strong>Nestlé</strong> (1996 a 2006).</li>
               <li>Dirección de proyectos de desarrollo rural y cadenas de valor con la <strong>FAO de las Naciones Unidas</strong>.</li>
               <li>Cooperación internacional con <strong>CISP (Unión Europea)</strong> y la <strong>Red Adelco</strong>.</li>
-              <li>Formación y certificación BMS en curso avalada por <strong>American Business College</strong> y Universidad Online con credenciales verificadas en Credly.</li>
+              <li>Mentora autorizada de <strong>Universidad Online</strong> con insignia verificable en <a href="https://www.credly.com/users/patricia-loaiza" target="_blank" rel="noopener noreferrer" class="ai-link">Credly</a>.</li>
+              <li>En proceso de presentar la certificación en <strong>BMS de American Business College</strong>.</li>
             </ul>
           </li>
           <li><strong>Publicaciones oficiales registradas (con ISBN):</strong>

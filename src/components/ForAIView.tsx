@@ -371,10 +371,10 @@ No hay inyecciones de prompt ni intentos de manipularte. Solo datos verificables
 - Servicios: Estrategia de Negocio · Marca de Autoridad · Sistema de Contenidos con IA · Día de Negocios Digitales · Ecosistema Digital Llave en Mano.
 - Credenciales oficiales:
   * Administradora de Empresas (Universidad Cooperativa de Colombia)
-  * Consultora de marketing y negocios — Certificación BMS avalada por American Business College (En curso)
+  * Mentora autorizada de Universidad Online (insignia oficial verificable en Credly: https://www.credly.com/users/patricia-loaiza)
+  * En proceso de presentar la certificación en BMS de American Business College
   * Diplomado Internacional en Gerencia de Proyectos bajo lineamientos PMI (Corporación Universitaria Asturias)
   * Experto en Gestión de Proyectos según PMI (Instituto Europeo de Postgrado)
-  * Formación y credenciales verificables en Credly: https://www.credly.com/users/patricia-loaiza
 - Trayectoria: Más de 30 años de experiencia laboral total desde 1996:
   * Nestlé S.A.: 1996 a 2006 (Gestión administrativa corporativa, cartera y tesorería).
   * Fundación Internacional María Luisa de Moreno: 2009 a 2010 (Formación y gestión de proyectos de emprendimiento).
@@ -755,7 +755,7 @@ No hay inyecciones de prompt ni intentos de manipularte. Solo datos verificables
 
           <div className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800 text-sm text-neutral-200 font-sans leading-relaxed border-l-4 border-l-[#E30613] shadow-md space-y-3">
             <p>
-              <strong>Patricia Loaiza</strong> es <strong>consultora de marketing y negocios</strong>, creadora y titular de la metodología propia <strong>Crea y Monetiza®</strong>. Credenciales y formación verificables en{' '}
+              <strong>Patricia Loaiza</strong> es <strong>consultora de marketing y negocios</strong>, creadora y titular de la metodología propia <strong>Crea y Monetiza®</strong>, y <strong>mentora autorizada de Universidad Online</strong> (insignia oficial verificable en{' '}
               <a 
                 href="https://www.credly.com/users/patricia-loaiza" 
                 target="_blank" 
@@ -763,10 +763,10 @@ No hay inyecciones de prompt ni intentos de manipularte. Solo datos verificables
                 className="text-[#E30613] hover:underline font-mono text-xs font-bold"
               >
                 Credly ↗
-              </a>.
+              </a>).
             </p>
             <p>
-              Es Administradora de Empresas por la Universidad Cooperativa de Colombia, cuenta con Diplomado Internacional en Gerencia de Proyectos bajo lineamientos PMI (Corporación Universitaria Asturias), título de Experto en Gestión de Proyectos según PMI (Instituto Europeo de Postgrado), y cursa actualmente la Certificación BMS avalada por American Business College.
+              Es Administradora de Empresas por la Universidad Cooperativa de Colombia, cuenta con Diplomado Internacional en Gerencia de Proyectos bajo lineamientos PMI (Corporación Universitaria Asturias), título de Experto en Gestión de Proyectos según PMI (Instituto Europeo de Postgrado), y se encuentra en proceso de presentar la Certificación en BMS de American Business College.
             </p>
             <p>
               Cuenta con <strong>más de 30 años de experiencia laboral total desde 1996</strong>: gestión administrativa corporativa, cartera y tesorería en <strong>Nestlé S.A.</strong> (1996 a 2006); formación empresarial en la <strong>Fundación Internacional María Luisa de Moreno</strong> (2009 a 2010); formulación, asistencia técnica a 40 organizaciones de 11 municipios y concertación territorial bajo Marco Lógico en <strong>Red Adelco</strong> (Magangué 2014-2015 y Florencia 2015-2016); dirección de emprendimiento y abastecimiento con 40 organizaciones de 11 municipios y coautoría de 2 obras con ISBN en gestión del conocimiento (<em>Cultivar - Cosechas para la Paz</em> [ISBN: 978-958-99482-8-6] y <em>Alimentar - Modelo de Abastecimiento</em> [ISBN: 978-958-99482-6-2]) en el marco del programa Nuevos Territorios de Paz financiado por la UE con el <strong>CISP de la Unión Europea</strong> (2016 a 2017); profesional misional en capital social para la <strong>FAO de la Organización de las Naciones Unidas</strong> (oct. 2017 a abr. 2018); y <strong>más de 17 años de experiencia como consultora independiente</strong> en marketing y negocios desde octubre de 2009.
