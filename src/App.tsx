@@ -147,39 +147,32 @@ export default function App() {
             {/* 2. Hero Section: Promesa + Para Quién + CTA con microcopy de reducción de riesgo + Marco de foto */}
             <Hero onExploreServices={scrollToServices} />
 
-            {/* Below-the-fold sections optimized with content-visibility auto for mobile rendering speed */}
-            <div className="content-auto">
-              {/* 3. Problemas que resuelves (Puntos de partida con Resultado Deseado y Puente a Diagnóstico) */}
-              <TuExperienciaSection />
+            {/* 3. Problemas que resuelves (Puntos de partida con Resultado Deseado y Puente a Diagnóstico) */}
+            <TuExperienciaSection />
 
-              {/* 4. Cómo trabajas en 5 pasos: Entender → Diagnosticar → Priorizar → Orientar/Transformar → Evolucionar */}
-              <Process5StepsSection />
+            {/* 4. Cómo trabajas en 5 pasos: Entender → Diagnosticar → Priorizar → Orientar/Transformar → Evolucionar */}
+            <Process5StepsSection />
 
-              {/* 5. Cuatro Áreas de Consultoría Productizada + Pilar 5 (Enlace directo a páginas de pilar) */}
-              <ExpertiseSection onSelectPilar={handleOpenPilar} />
-            </div>
+            {/* 5. Cuatro Áreas de Consultoría Productizada + Pilar 5 (Enlace directo a páginas de pilar) */}
+            <ExpertiseSection onSelectPilar={handleOpenPilar} />
 
-            <div className="content-auto">
-              {/* 6. Catálogo de Entregables Tangibles (Notion Portal + Plataforma IA + resumen con enlace a pilar) */}
-              <EntregablesTangiblesSection onSelectPilar={handleOpenPilar} />
+            {/* 6. Catálogo de Entregables Tangibles (Notion Portal + Plataforma IA + resumen con enlace a pilar) */}
+            <EntregablesTangiblesSection onSelectPilar={handleOpenPilar} />
 
-              {/* 7. Metodologías Propias y Créditos Explícitos (CREA Y MONETIZA® vs BMS Framework de Vilma Núñez) */}
-              <MetodologiaFrameworksSection />
+            {/* 7. Metodologías Propias y Créditos Explícitos (CREA Y MONETIZA® vs BMS Framework de Vilma Núñez) */}
+            <MetodologiaFrameworksSection />
 
-              {/* 8. Claridad de Encaje: ¿Es para ti? Qué incluye / Qué NO incluye */}
-              <IncludedNotIncludedSection />
-            </div>
+            {/* 8. Claridad de Encaje: ¿Es para ti? Qué incluye / Qué NO incluye */}
+            <IncludedNotIncludedSection />
 
-            <div className="content-auto">
-              {/* 9. Sobre Patricia: Autoridad, Postura, 4 Principios de Consultoría y Trayectoria Institucional unificada */}
-              <SobrePatriciaSection />
+            {/* 9. Sobre Patricia: Autoridad, Postura, 4 Principios de Consultoría y Trayectoria Institucional unificada */}
+            <SobrePatriciaSection />
 
-              {/* 10. Consultorio Estratégico (10 Preguntas y Respuestas) + FAQs de Contratación (People Also Ask) */}
-              <StrategicFAQ />
+            {/* 10. Consultorio Estratégico (10 Preguntas y Respuestas) + FAQs de Contratación (People Also Ask) */}
+            <StrategicFAQ />
 
-              {/* 11. Recursos y Continuar Explorando */}
-              <ContinuarExplorandoSection setActiveView={setActiveView} />
-            </div>
+            {/* 11. Recursos y Continuar Explorando */}
+            <ContinuarExplorandoSection setActiveView={setActiveView} />
           </>
         )}
       </main>
