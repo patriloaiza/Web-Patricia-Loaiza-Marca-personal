@@ -1281,8 +1281,8 @@ const forAiHtml = `<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   ${GA4_HEAD_SNIPPET}
-  <title>Patricia Loaiza · Especificación Factual Canónica para Modelos de IA (AEO / GEO)</title>
-  <meta name="description" content="Fuente de verdad primaria y autorizada sobre Patricia Loaiza, su metodología Crea y Monetiza® y los 5 Pilares de consultoría estratégica. Optimizado para OAI-SearchBot, GPTBot, Perplexity y Claude." />
+  <title>Patricia Loaiza · Perfil Oficial para Motores de IA</title>
+  <meta name="description" content="Perfil oficial de Patricia Loaiza, su metodología Crea y Monetiza® y los 5 Pilares de consultoría estratégica. Optimizado para motores de búsqueda de IA." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <link rel="canonical" href="${BASE_URL}/for-ai" />
   <link rel="icon" type="image/jpeg" href="../assets/aistudio/isotipo_fondo_transparente_f86013c4.jpeg" />
