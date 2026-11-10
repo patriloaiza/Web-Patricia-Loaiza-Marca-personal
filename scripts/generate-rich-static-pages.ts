@@ -23,16 +23,29 @@ const PREDIAGNOSTICO_BASE = 'https://test.creaymonetiza.online/diagnostico_p1-pa
 const GA4_MEASUREMENT_ID = 'G-L9YTEC9F7F';
 
 const GA4_HEAD_SNIPPET = `
-  <!-- Google tag (gtag.js) - Google Analytics 4 Oficial -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}"></script>
+  <!-- Google tag (gtag.js) - Google Analytics 4 Oficial (Carga optimizada) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', '${GA4_MEASUREMENT_ID}', {
-      send_page_view: true
+    gtag('config', '${GA4_MEASUREMENT_ID}', { send_page_view: true });
+    
+    var gaLoaded = false;
+    function initGA4() {
+      if (gaLoaded) return;
+      gaLoaded = true;
+      ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(ev) {
+        window.removeEventListener(ev, initGA4, { passive: true });
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}';
+      document.head.appendChild(s);
+    }
+    ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(ev) {
+      window.addEventListener(ev, initGA4, { passive: true, once: true });
     });
+    setTimeout(initGA4, 4500);
   </script>
 `;
 

@@ -4,16 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- Google tag (gtag.js) - Google Analytics 4 Oficial -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9YTEC9F7F"></script>
+  <!-- Google tag (gtag.js) - Google Analytics 4 Oficial (Carga optimizada) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'G-L9YTEC9F7F', {
-      send_page_view: true
+    gtag('config', 'G-L9YTEC9F7F', { send_page_view: true });
+    
+    var gaLoaded = false;
+    function initGA4() {
+      if (gaLoaded) return;
+      gaLoaded = true;
+      ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(ev) {
+        window.removeEventListener(ev, initGA4, { passive: true });
+      });
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-L9YTEC9F7F';
+      document.head.appendChild(s);
+    }
+    ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(ev) {
+      window.addEventListener(ev, initGA4, { passive: true, once: true });
     });
+    setTimeout(initGA4, 4500);
   </script>
 
   <title>Patricia Loaiza · Perfil Oficial para Motores de IA</title>

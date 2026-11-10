@@ -25,25 +25,29 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" />
     </noscript>
 
-    <!-- Google tag (gtag.js) - Google Analytics 4 Oficial (Carga no bloqueante optimizada para móvil) -->
+    <!-- Google tag (gtag.js) - Google Analytics 4 Oficial (Carga en primera interacción para TBT = 0 en móvil) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-L9YTEC9F7F', { send_page_view: true });
       
-      // Carga asíncrona no bloqueante de GA4
+      var gaLoaded = false;
       function initGA4() {
+        if (gaLoaded) return;
+        gaLoaded = true;
+        ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(ev) {
+          window.removeEventListener(ev, initGA4, { passive: true });
+        });
         var s = document.createElement('script');
         s.async = true;
         s.src = 'https://www.googletagmanager.com/gtag/js?id=G-L9YTEC9F7F';
         document.head.appendChild(s);
       }
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(initGA4, { timeout: 2000 });
-      } else {
-        setTimeout(initGA4, 1000);
-      }
+      ['scroll', 'touchstart', 'mousemove', 'click'].forEach(function(ev) {
+        window.addEventListener(ev, initGA4, { passive: true, once: true });
+      });
+      setTimeout(initGA4, 4500);
     </script>
 
     <!-- Open Graph / Facebook -->
