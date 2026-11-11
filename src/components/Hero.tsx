@@ -40,26 +40,21 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
               PATRICIA LOAIZA
             </h1>
 
-            {/* Accent badge directly below name, matching Ph.D. yellow badge placement */}
+            {/* Accent badge directly below name */}
             <div className="mb-6">
               <span className="inline-block px-3.5 py-1.5 bg-[#E30613] text-white font-extrabold text-xs sm:text-sm tracking-wider uppercase">
-                CREA Y MONETIZA®
+                Creadora de CREA Y MONETIZA®
               </span>
             </div>
 
             {/* Subtitle */}
-            <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-3 tracking-tight leading-snug">
+            <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 tracking-tight leading-snug">
               Consultora de marketing y negocios
             </h2>
 
             {/* Core Value Proposition headline */}
-            <p className="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight mb-4 tracking-tight">
-              Convierto tu experiencia profesional en una estrategia de negocio, una oferta clara y un sistema comercial estructurado.
-            </p>
-
-            {/* Target Audience & Methodology Context */}
-            <p className="text-base sm:text-lg text-neutral-600 leading-relaxed mb-8 max-w-2xl font-normal">
-              <strong className="text-neutral-900 font-bold">Tu experiencia ya vale.</strong> Te ayudo a convertirla en una <strong className="text-neutral-900 font-semibold">oferta estructurada</strong>, una <strong className="text-neutral-900 font-semibold">marca que te diferencie</strong> y un <strong className="text-neutral-900 font-semibold">sistema comercial que funcione sin depender de nadie</strong>.
+            <p className="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight mb-8 max-w-2xl tracking-tight">
+              Ayudo a profesionales +40 a convertir su experiencia en un negocio rentable mediante estrategia, marca personal e inteligencia artificial.
             </p>
 
             {/* Action Buttons: Primary Prediagnostic + Secondary Areas */}
