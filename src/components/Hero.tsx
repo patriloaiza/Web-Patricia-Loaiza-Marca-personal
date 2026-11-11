@@ -59,7 +59,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
 
             {/* Target Audience & Methodology Context */}
             <p className="text-base sm:text-lg text-neutral-600 leading-relaxed mb-8 max-w-2xl font-normal">
-              Acompaño a <strong className="text-neutral-900 font-semibold">consultores, terapeutas, psicólogos y profesionales del conocimiento (senior +40 a 65 años)</strong> a transformar su trayectoria y saber hacer acumulado en ofertas estructuradas, diferenciación visible y sistemas comerciales que puedan gestionar con total autonomía.
+              <strong className="text-neutral-900 font-bold">Tu experiencia ya vale.</strong> Te ayudo a convertirla en una <strong className="text-neutral-900 font-semibold">oferta estructurada</strong>, una <strong className="text-neutral-900 font-semibold">marca que te diferencie</strong> y un <strong className="text-neutral-900 font-semibold">sistema comercial que funcione sin depender de nadie</strong>.
             </p>
 
             {/* Action Buttons: Primary Prediagnostic + Secondary Areas */}

@@ -24,7 +24,7 @@ export const BRAND_INFO = {
   methodology: "Crea y Monetiza®",
   valueProposition: "Convierto tu experiencia profesional en una estrategia de negocio, una oferta clara y un sistema comercial estructurado.",
   coreQuote: "No vendo lo que la persona cree que necesita. Le muestro, a partir de lo que encontramos en su diagnóstico, qué necesita resolver primero y cómo puedo ayudarla a hacerlo.",
-  heroSummary: "Acompaño a consultores, terapeutas, psicólogos y profesionales del conocimiento (senior +40 a 65 años) a transformar su trayectoria y saber hacer en ofertas estructuradas, posicionamiento diferencial y sistemas comerciales que puedan gestionar con autonomía.",
+  heroSummary: "Tu experiencia ya vale. Te ayudo a convertirla en una oferta estructurada, una marca que te diferencie y un sistema comercial que funcione sin depender de nadie.",
   baseLocation: "Medellín, Colombia · Atención Global en Iberoamérica y España",
   targetAudience: "Terapeutas, psicólogos, coaches, consultores y profesionales senior (40 a 65 años) con más de 10 a 20 años de experiencia",
   domain: "soypatricialoaiza.com",
