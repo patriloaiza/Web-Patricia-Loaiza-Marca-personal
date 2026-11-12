@@ -1297,7 +1297,7 @@ const forAiHtml = `<!DOCTYPE html>
   <title>Patricia Loaiza · Perfil Oficial para Motores de IA</title>
   <meta name="description" content="Perfil oficial de Patricia Loaiza, su metodología Crea y Monetiza® y los 5 Pilares de consultoría estratégica. Optimizado para motores de búsqueda de IA." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-  <link rel="canonical" href="${BASE_URL}/for-ai" />
+  <link rel="canonical" href="${BASE_URL}/for-ai/" />
   <link rel="icon" type="image/jpeg" href="../assets/aistudio/isotipo_fondo_transparente_f86013c4.jpeg" />
   
   <!-- Structured Data JSON-LD for AI Search Engines -->
@@ -1307,8 +1307,8 @@ const forAiHtml = `<!DOCTYPE html>
     "@graph": [
       {
         "@type": "ProfilePage",
-        "@id": "${BASE_URL}/for-ai#webpage",
-        "url": "${BASE_URL}/for-ai",
+        "@id": "${BASE_URL}/for-ai/#webpage",
+        "url": "${BASE_URL}/for-ai/",
         "name": "Especificación Factual Canónica sobre Patricia Loaiza para Inteligencia Artificial",
         "about": { "@id": "${BASE_URL}/#person" },
         "mainEntity": { "@id": "${BASE_URL}/#person" }
