@@ -43,7 +43,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices }) => {
             {/* Accent badge directly below name */}
             <div className="mb-6">
               <span className="inline-block px-3.5 py-1.5 bg-[#E30613] text-white font-extrabold text-xs sm:text-sm tracking-wider uppercase">
-                Creadora de CREA Y MONETIZA®
+                Creadora del método CREA Y MONETIZA®
               </span>
             </div>
 
