@@ -1,0 +1,38 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Patricia Loaiza · Consultora de Marketing y Negocios",
+    "identifier": "https://soypatricialoaiza.com",
+    "documentationUrl": "https://soypatricialoaiza.com/for-ai/",
+    "logoUrl": "https://soypatricialoaiza.com/assets/aistudio/logo_horizontal_fondo_blanco_a4fe62ce.jpeg"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:soypatricialoaiza.com:profile:canonical-identity",
+      "displayName": "Patricia Loaiza · Perfil Oficial y Método Crea y Monetiza®",
+      "type": "text/markdown",
+      "url": "https://soypatricialoaiza.com/llms.txt",
+      "description": "Fuente de verdad canónica sobre Patricia Loaiza, consultora de marketing y negocios en Medellín con atención online global, creadora del método Crea y Monetiza® y sus 5 Pilares de consultoría.",
+      "tags": [
+        "patricia-loaiza",
+        "crea-y-monetiza",
+        "consultoria-estrategica",
+        "marca-de-autoridad",
+        "profesionales-senior"
+      ],
+      "capabilities": [
+        "CanonicalBiography",
+        "FivePillarsCatalog",
+        "MethodologyOverview",
+        "FAQReference"
+      ],
+      "representativeQueries": [
+        "¿Quién es Patricia Loaiza consultora de marketing y negocios?",
+        "¿Qué es el método Crea y Monetiza de Patricia Loaiza?",
+        "¿Cuáles son los 5 pilares de consultoría de Patricia Loaiza?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-11-16T00:00:00Z"
+    }
+  ]
+}

@@ -16,7 +16,12 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # 4. Fallback for client-side routing to index.html
+  # 4. Never fall back to index.html for .well-known or static/data extensions (return proper 404 if missing)
+  RewriteCond %{REQUEST_URI} ^/\.well-known/ [OR]
+  RewriteCond %{REQUEST_URI} \.(json|txt|xml|pdf|js|css|png|jpg|jpeg|webp|svg|ico|woff|woff2|map)$ [NC]
+  RewriteRule ^ - [L]
+
+  # 5. Fallback for client-side routing to index.html
   RewriteRule ^ index.html [L]
 </IfModule>
 
