@@ -3,13 +3,13 @@
   RewriteEngine On
   RewriteBase /
 
-  # 1. Enforce HTTPS
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-  # 2. Enforce non-www (redirect www.soypatricialoaiza.com to soypatricialoaiza.com)
+  # 1. Enforce non-www directly over HTTPS (single 301 hop from http(s)://www -> https://non-www)
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # 2. Enforce HTTPS for non-www traffic
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # 3. Direct access to existing static files, directories, or scripts
   RewriteCond %{REQUEST_FILENAME} -f [OR]
