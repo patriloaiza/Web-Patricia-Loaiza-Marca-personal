@@ -11,17 +11,21 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 3. Direct access to existing static files, directories, or scripts
+  # 3. Mark unlisted Privacy Policy page with env var for X-Robots-Tag header
+  RewriteCond %{REQUEST_URI} ^/politica-de-privacidad(/|$) [NC]
+  RewriteRule ^ - [E=NOINDEX_PRIVACY:1]
+
+  # 4. Direct access to existing static files, directories, or scripts
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # 4. Never fall back to index.html for .well-known or static/data extensions (return proper 404 if missing)
+  # 5. Never fall back to index.html for .well-known or static/data extensions (return proper 404 if missing)
   RewriteCond %{REQUEST_URI} ^/\.well-known/ [OR]
   RewriteCond %{REQUEST_URI} \.(json|txt|xml|pdf|js|css|png|jpg|jpeg|webp|svg|ico|woff|woff2|map)$ [NC]
   RewriteRule ^ - [L]
 
-  # 5. Fallback for client-side routing to index.html
+  # 6. Fallback for client-side routing to index.html
   RewriteRule ^ index.html [L]
 </IfModule>
 
@@ -31,6 +35,10 @@
   <FilesMatch "\.(pdf)$">
     Header set X-Robots-Tag "noindex, nofollow, noarchive"
   </FilesMatch>
+
+  # Block indexing of unlisted Privacy Policy page (still returns HTTP 200 for Meta/Facebook Ads validator)
+  Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet" env=NOINDEX_PRIVACY
+  Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet" env=REDIRECT_NOINDEX_PRIVACY
   
   # Allow AI bots and search engines to read technical and txt files with permissive CORS
   <FilesMatch "\.(txt|xml|json)$">

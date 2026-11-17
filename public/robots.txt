@@ -87,6 +87,11 @@ Allow: /
 Disallow: /docs/
 Disallow: /*.pdf$
 
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /docs/
+Disallow: /*.pdf$
+
 # Cohere AI
 User-agent: cohere-ai
 Allow: /
