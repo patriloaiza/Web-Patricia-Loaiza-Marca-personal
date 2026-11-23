@@ -474,7 +474,13 @@ PILARES_FULL_DETAIL.forEach((pilar, index) => {
     "provider": {
       "@type": "Person",
       "name": "Patricia Loaiza",
-      "url": "${BASE_URL}"
+      "url": "${BASE_URL}",
+      "sameAs": [
+        "https://www.linkedin.com/in/patricia-loaiza-consultora/",
+        "https://www.instagram.com/patricialoaiza_consultora/",
+        "https://www.youtube.com/@PatriciaLoaiza-CreayMonetiza",
+        "https://www.credly.com/users/patricia-loaiza"
+      ]
     },
     "description": "${pilar.subname}. ${pilar.tagline}",
     "url": "${BASE_URL}/pages/${fileName}"
@@ -1318,6 +1324,12 @@ const forAiHtml = `<!DOCTYPE html>
         "@id": "${BASE_URL}/#person",
         "name": "Patricia Loaiza",
         "url": "${BASE_URL}",
+        "sameAs": [
+          "https://www.linkedin.com/in/patricia-loaiza-consultora/",
+          "https://www.instagram.com/patricialoaiza_consultora/",
+          "https://www.youtube.com/@PatriciaLoaiza-CreayMonetiza",
+          "https://www.credly.com/users/patricia-loaiza"
+        ],
         "jobTitle": "Consultora de Marketing y Negocios · Creadora de la Metodología Propia Crea y Monetiza®",
         "description": "Consultora estratégica con más de 30 años de experiencia integral laboral (desde 1996) en gestión corporativa multinacional (Nestlé), formulación de proyectos territoriales (FAO ONU, CISP Unión Europea, Red Adelco) y más de 17 años de consultoría independiente para profesionales senior (desde octubre de 2009).",
         "address": {

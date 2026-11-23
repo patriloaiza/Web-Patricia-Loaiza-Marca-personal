@@ -201,6 +201,12 @@ export const ForAIView: React.FC<ForAIViewProps> = ({ onBackToHuman, onSelectPil
         "name": "Patricia Loaiza",
         "alternateName": "Patri Loaiza",
         "url": "https://soypatricialoaiza.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/patricia-loaiza-consultora/",
+          "https://www.instagram.com/patricialoaiza_consultora/",
+          "https://www.youtube.com/@PatriciaLoaiza-CreayMonetiza",
+          "https://www.credly.com/users/patricia-loaiza"
+        ],
         "honorificPrefix": "Consultora",
         "jobTitle": "Consultora de Marketing y Negocios · Creadora de la Metodología Propia Crea y Monetiza®",
         "description": "Consultora estratégica con más de 30 años de experiencia laboral acumulada desde 1996 conectando rigor corporativo (Nestlé), dirección misional y territorial (FAO ONU, CISP UE, Red Adelco) y más de 17 años como consultora independiente en marketing y negocios (desde octubre de 2009) guiando a expertos senior a productizar su conocimiento y gobernar sistemas comerciales con IA.",
