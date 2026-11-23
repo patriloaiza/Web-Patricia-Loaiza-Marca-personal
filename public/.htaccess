@@ -36,6 +36,11 @@ ErrorDocument 404 /404.html
   Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet" env=NOINDEX_PRIVACY
   Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet" env=REDIRECT_NOINDEX_PRIVACY
   
+  # Advertise machine-readable resources via RFC 8288 Link header on the homepage
+  <Files "index.html">
+    Header set Link "</llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"LLMs Index\", </llms-full.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Full Canonical Context\", </.well-known/ard.json>; rel=\"describedby\"; type=\"application/json\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+  </Files>
+
   # Allow AI bots and search engines to read technical and txt files with permissive CORS
   <FilesMatch "\.(txt|xml|json)$">
     Header set Access-Control-Allow-Origin "*"
