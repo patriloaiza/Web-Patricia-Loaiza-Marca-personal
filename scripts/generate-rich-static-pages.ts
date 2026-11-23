@@ -284,7 +284,8 @@ const renderFooter = () => `
             <strong style="color: #FFF; font-size: 12px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase;">IDENTIDAD</strong>
           </div>
           <ul style="list-style: none; padding: 0; margin: 0; font-size: 12px; line-height: 2.2;">
-            <li><a href="${BASE_URL}/#sobre-patricia-trayectoria" style="color: #A3A3A3; text-decoration: none;">Sobre Patricia</a></li>
+            <li><a href="${BASE_URL}/pages/sobre-patricia.html" style="color: #A3A3A3; text-decoration: none;">Sobre Patricia</a></li>
+            <li><a href="${BASE_URL}/contacto/" style="color: #A3A3A3; text-decoration: none;">Contacto Oficial</a></li>
             <li><a href="${BASE_URL}/#proceso-5-fases" style="color: #A3A3A3; text-decoration: none;">Ruta en 5 Pasos</a></li>
             <li><a href="${BASE_URL}/#principios-consultoria" style="color: #A3A3A3; text-decoration: none;">Principios y Postura</a></li>
             <li><a href="${BASE_URL}/#hitos-institucionales" style="color: #A3A3A3; text-decoration: none;">Trayectoria Institucional</a></li>
@@ -341,8 +342,13 @@ const renderFooter = () => `
               </a>
             </li>
             <li style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #1F1F1F;">
-              <a href="../docs/autorizacion-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #f87171; text-decoration: none; display: flex; align-items: center; gap: 6px;" title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales">
+              <a href="${BASE_URL}/aviso-legal/" style="color: #FFF; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 6px;">
                 ${ICONS.shield}
+                <span>Aviso Legal y Términos de Uso</span>
+              </a>
+            </li>
+            <li>
+              <a href="../docs/autorizacion-tratamiento-datos.pdf" target="_blank" rel="noopener noreferrer nofollow" style="color: #f87171; text-decoration: none; display: flex; align-items: center; gap: 6px;" title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales">
                 <span>Autorización Tratamiento de Datos Personales</span>
               </a>
             </li>

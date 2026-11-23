@@ -62,12 +62,20 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
             </div>
             <ul className="space-y-2 text-neutral-400">
               <li>
-                <button
-                  onClick={() => { setActiveView('main'); setTimeout(() => { document.getElementById('sobre-patricia-trayectoria')?.scrollIntoView({ behavior: 'smooth' }); }, 50); }}
-                  className="hover:text-white transition-colors cursor-pointer"
+                <a
+                  href="./pages/sobre-patricia.html"
+                  className="hover:text-white transition-colors block"
                 >
                   Sobre Patricia
-                </button>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./contacto/"
+                  className="hover:text-white transition-colors block"
+                >
+                  Contacto Oficial
+                </a>
               </li>
               <li>
                 <button
@@ -231,13 +239,22 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
               </li>
               <li className="pt-2 border-t border-neutral-900">
                 <a
+                  href="./aviso-legal/"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-200 font-semibold group"
+                >
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#E30613] shrink-0" />
+                  <span className="group-hover:underline">Aviso Legal y Términos de Uso</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href="./docs/autorizacion-tratamiento-datos.pdf"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   className="hover:text-white transition-colors flex items-center gap-1.5 text-left text-neutral-300 group"
                   title="Abrir PDF oficial de Autorización Tratamiento de Datos Personales"
                 >
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#E30613] shrink-0" />
+                  <FileText className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
                   <span className="group-hover:underline">Autorización Tratamiento de Datos Personales</span>
                 </a>
               </li>
@@ -286,12 +303,26 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
           <p>© 2026 PATRICIA LOAIZA®. METODOLOGÍA CREA Y MONETIZA®. DOMINIO: soypatricialoaiza.com. TODOS LOS DERECHOS RESERVADOS.</p>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-mono text-[11px]">
             <a 
+              href="./aviso-legal/"
+              className="text-neutral-200 hover:text-white font-semibold transition-colors underline-offset-2 hover:underline"
+            >
+              Aviso Legal y Términos
+            </a>
+            <span className="text-neutral-600">·</span>
+            <a 
+              href="./contacto/"
+              className="text-neutral-300 hover:text-white transition-colors underline-offset-2 hover:underline"
+            >
+              Contacto
+            </a>
+            <span className="text-neutral-600">·</span>
+            <a 
               href="./docs/aviso-privacidad.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-white transition-colors underline-offset-2 hover:underline"
             >
-              Aviso Legal & Privacidad (AV-01)
+              Aviso de Privacidad (AV-01)
             </a>
             <span className="text-neutral-600">·</span>
             <a 

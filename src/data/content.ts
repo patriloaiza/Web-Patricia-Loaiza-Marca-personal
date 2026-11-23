@@ -31,7 +31,7 @@ export const BRAND_INFO = {
   canonicalUrl: "https://soypatricialoaiza.com",
   prediagnosticoUrl: "https://test.creaymonetiza.online/diagnostico_p1-page",
   contactEmail: "hola@soypatricialoaiza.com",
-  whatsappContact: "+573008135043",
+  whatsappContact: "+573001690969",
   primaryColor: "#E30613",
   blackColor: "#0A0A0A",
   whiteColor: "#FFFFFF",

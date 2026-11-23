@@ -75,4 +75,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+
+  <!-- Contacto Oficial -->
+  <url>
+    <loc>https://soypatricialoaiza.com/contacto/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Aviso Legal y Términos de Uso -->
+  <url>
+    <loc>https://soypatricialoaiza.com/aviso-legal/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
