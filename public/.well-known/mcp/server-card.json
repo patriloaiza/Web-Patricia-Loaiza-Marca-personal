@@ -1,0 +1,69 @@
+{
+  "name": "soypatricialoaiza-mcp",
+  "title": "Patricia Loaiza · Consultora de Marketing y Negocios (Crea y Monetiza®)",
+  "version": "1.0.0",
+  "description": "Canonical read-only agent metadata, consulting pillars catalog, and WebMCP discovery card for Patricia Loaiza and the Crea y Monetiza® methodology.",
+  "protocolVersion": "2025-06-18",
+  "endpoint": "https://soypatricialoaiza.com/for-ai/",
+  "documentationUrl": "https://soypatricialoaiza.com/llms.txt",
+  "websiteUrl": "https://soypatricialoaiza.com",
+  "serverInfo": {
+    "name": "soypatricialoaiza-mcp",
+    "title": "Patricia Loaiza · Crea y Monetiza®",
+    "version": "1.0.0"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://soypatricialoaiza.com/for-ai/"
+  },
+  "authentication": {
+    "required": false
+  },
+  "capabilities": {
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "resources": [
+    {
+      "uri": "https://soypatricialoaiza.com/llms.txt",
+      "name": "llms-index",
+      "description": "Structured Markdown index of Patricia Loaiza, Crea y Monetiza® methodology, and the 5 consulting pillars.",
+      "mimeType": "text/markdown"
+    },
+    {
+      "uri": "https://soypatricialoaiza.com/llms-full.txt",
+      "name": "llms-full-context",
+      "description": "Complete canonical biography, 5 consulting pillars, deliverables, credentials, and FAQs.",
+      "mimeType": "text/markdown"
+    },
+    {
+      "uri": "https://soypatricialoaiza.com/.well-known/ard.json",
+      "name": "agent-resource-discovery",
+      "description": "ARD v1.0 discovery manifest for soypatricialoaiza.com.",
+      "mimeType": "application/json"
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_consulting_pillars",
+      "description": "Returns the official catalog of the 5 consulting pillars of Patricia Loaiza (Crea y Monetiza® methodology)."
+    },
+    {
+      "name": "get_official_contact_and_diagnostic",
+      "description": "Returns verified contact channels, external profiles (sameAs), and the official Prediagnóstico URL."
+    },
+    {
+      "name": "recommend_starting_pillar",
+      "description": "Recommends the most suitable consulting pillar for a senior professional (+40) based on their primary challenge."
+    },
+    {
+      "name": "navigate_to_section",
+      "description": "Navigates the browser to a key section or official page on soypatricialoaiza.com."
+    }
+  ]
+}
