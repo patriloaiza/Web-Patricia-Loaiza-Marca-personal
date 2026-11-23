@@ -2,6 +2,7 @@
 # Patricia Loaiza · Consultora de Marketing y Negocios · Metodología Crea y Monetiza®
 
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 # Exclusión estricta de documentos PDF legales para concentrar el presupuesto de indexación en páginas de negocio
 Disallow: /docs/
