@@ -1,3 +1,6 @@
+# Custom 404 error page (ensures real HTTP 404 status for non-existent URLs)
+ErrorDocument 404 /404.html
+
 # Apache / LiteSpeed Configuration for Hostinger (https://soypatricialoaiza.com)
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -16,17 +19,10 @@
   RewriteRule ^ - [E=NOINDEX_PRIVACY:1]
 
   # 4. Direct access to existing static files, directories, or scripts
+  # All non-existent paths fall through to Apache/LiteSpeed real HTTP 404 (ErrorDocument /404.html)
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
-
-  # 5. Never fall back to index.html for .well-known or static/data extensions (return proper 404 if missing)
-  RewriteCond %{REQUEST_URI} ^/\.well-known/ [OR]
-  RewriteCond %{REQUEST_URI} \.(json|txt|xml|pdf|js|css|png|jpg|jpeg|webp|svg|ico|woff|woff2|map)$ [NC]
-  RewriteRule ^ - [L]
-
-  # 6. Fallback for client-side routing to index.html
-  RewriteRule ^ index.html [L]
 </IfModule>
 
 # Security & Cache Headers
