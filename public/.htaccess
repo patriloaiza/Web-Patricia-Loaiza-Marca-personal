@@ -47,7 +47,16 @@ ErrorDocument 404 /404.html
   # Advertise machine-readable resources via RFC 8288 Link header on the homepage
   <Files "index.html">
     Header set Link "</index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Homepage Markdown\", </llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"LLMs Index\", </llms-full.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Full Canonical Context\", </.well-known/ard.json>; rel=\"describedby\"; type=\"application/json\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+    Header set Cache-Control "public, max-age=300, stale-while-revalidate=600"
   </Files>
+
+  # Long-term browser & CDN caching for versioned static assets
+  <FilesMatch "\.(js|css|woff|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|png|jpg|jpeg|svg|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
 
   # Force exact text/markdown Content-Type and avoid HTML cache mixing on Hostinger LiteSpeed
   <Files "index.md">
@@ -55,9 +64,9 @@ ErrorDocument 404 /404.html
     Header set Cache-Control "no-cache, must-revalidate"
   </Files>
 
-  # Ensure caches respect Accept content negotiation between HTML and Markdown
+  # Ensure caches respect Accept content negotiation between HTML and Markdown without duplicate headers
   <FilesMatch "^(index\.html|index\.md)$">
-    Header append Vary "Accept"
+    Header merge Vary "Accept"
   </FilesMatch>
 
   # Allow AI bots and search engines to read technical and markdown files with permissive CORS
