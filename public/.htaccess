@@ -20,7 +20,7 @@ ErrorDocument 404 /404.html
 
   # 4. Serve Markdown alternate on homepage when AI agents explicitly request Accept: text/markdown
   RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
-  RewriteRule ^(index\.html)?$ index.md [L]
+  RewriteRule ^(index\.html)?$ index.md [L,T=text/markdown,E=LSCACHE_NO_CACHE:1]
 
   # 5. Direct access to existing static files, directories, or scripts
   # All non-existent paths fall through to Apache/LiteSpeed real HTTP 404 (ErrorDocument /404.html)
@@ -30,7 +30,7 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 <IfModule mod_mime.c>
-  AddType "text/markdown; charset=utf-8" .md
+  AddType text/markdown .md
 </IfModule>
 
 # Security & Cache Headers
@@ -47,6 +47,12 @@ ErrorDocument 404 /404.html
   # Advertise machine-readable resources via RFC 8288 Link header on the homepage
   <Files "index.html">
     Header set Link "</index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Homepage Markdown\", </llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"LLMs Index\", </llms-full.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Full Canonical Context\", </.well-known/ard.json>; rel=\"describedby\"; type=\"application/json\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+  </Files>
+
+  # Force exact text/markdown Content-Type and avoid HTML cache mixing on Hostinger LiteSpeed
+  <Files "index.md">
+    Header set Content-Type "text/markdown; charset=utf-8"
+    Header set Cache-Control "no-cache, must-revalidate"
   </Files>
 
   # Ensure caches respect Accept content negotiation between HTML and Markdown
