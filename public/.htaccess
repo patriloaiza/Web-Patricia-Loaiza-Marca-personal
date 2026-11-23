@@ -18,11 +18,19 @@ ErrorDocument 404 /404.html
   RewriteCond %{REQUEST_URI} ^/politica-de-privacidad(/|$) [NC]
   RewriteRule ^ - [E=NOINDEX_PRIVACY:1]
 
-  # 4. Direct access to existing static files, directories, or scripts
+  # 4. Serve Markdown alternate on homepage when AI agents explicitly request Accept: text/markdown
+  RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+  RewriteRule ^(index\.html)?$ index.md [L]
+
+  # 5. Direct access to existing static files, directories, or scripts
   # All non-existent paths fall through to Apache/LiteSpeed real HTTP 404 (ErrorDocument /404.html)
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType "text/markdown; charset=utf-8" .md
 </IfModule>
 
 # Security & Cache Headers
@@ -38,11 +46,16 @@ ErrorDocument 404 /404.html
   
   # Advertise machine-readable resources via RFC 8288 Link header on the homepage
   <Files "index.html">
-    Header set Link "</llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"LLMs Index\", </llms-full.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Full Canonical Context\", </.well-known/ard.json>; rel=\"describedby\"; type=\"application/json\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
+    Header set Link "</index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Homepage Markdown\", </llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"LLMs Index\", </llms-full.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Full Canonical Context\", </.well-known/ard.json>; rel=\"describedby\"; type=\"application/json\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
   </Files>
 
-  # Allow AI bots and search engines to read technical and txt files with permissive CORS
-  <FilesMatch "\.(txt|xml|json)$">
+  # Ensure caches respect Accept content negotiation between HTML and Markdown
+  <FilesMatch "^(index\.html|index\.md)$">
+    Header append Vary "Accept"
+  </FilesMatch>
+
+  # Allow AI bots and search engines to read technical and markdown files with permissive CORS
+  <FilesMatch "\.(txt|xml|json|md)$">
     Header set Access-Control-Allow-Origin "*"
   </FilesMatch>
 </IfModule>
