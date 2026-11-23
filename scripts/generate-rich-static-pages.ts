@@ -1207,6 +1207,15 @@ const sobrePatriciaHtml = `<!doctype html>
 fs.writeFileSync(path.join(targetDir, 'sobre-patricia.html'), sobrePatriciaHtml);
 console.log('Sobre Patricia page generated: public/pages/sobre-patricia.html');
 
+// Also publish at /about/index.html (canonical -> /pages/sobre-patricia.html) for international agent readiness
+const aboutDir = path.join(__dirname, '..', 'public', 'about');
+if (!fs.existsSync(aboutDir)) {
+  fs.mkdirSync(aboutDir, { recursive: true });
+}
+const aboutHtml = sobrePatriciaHtml.replace(/href="\.\/([a-z0-9-]+\.html)"/g, 'href="../pages/$1"');
+fs.writeFileSync(path.join(aboutDir, 'index.html'), aboutHtml);
+console.log('About alias page generated: public/about/index.html');
+
 // GENERATE CREA Y MONETIZA METHODOLOGY PAGE
 const creaYMonetizaHtml = `<!doctype html>
 <html lang="es" class="scroll-smooth">

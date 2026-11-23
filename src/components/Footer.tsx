@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveView, onSelectPilar, on
             <ul className="space-y-2 text-neutral-400">
               <li>
                 <a
-                  href="./pages/sobre-patricia.html"
+                  href="./about/"
                   className="hover:text-white transition-colors block"
                 >
                   Sobre Patricia
