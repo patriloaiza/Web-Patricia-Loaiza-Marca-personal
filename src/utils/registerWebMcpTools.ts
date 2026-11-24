@@ -139,7 +139,7 @@ export function registerWebMcpTools(): void {
         role: 'Consultora de Marketing y Negocios · Creadora del método CREA Y MONETIZA®',
         location: 'Medellín, Antioquia, Colombia (Atención online global en español)',
         email: BRAND_INFO.contactEmail,
-        whatsapp: '+57 300 169 0969',
+        whatsapp: '+57 300 304 3250',
         website: BRAND_INFO.canonicalUrl,
         prediagnosticoUrl: BRAND_INFO.prediagnosticoUrl,
         pages: {

@@ -5,7 +5,7 @@
 - **Sitio oficial:** https://soypatricialoaiza.com/
 - **Sede:** Medellín, Antioquia, Colombia (Atención online global en español)
 - **Correo oficial:** hola@soypatricialoaiza.com
-- **WhatsApp oficial:** +57 300 169 0969
+- **WhatsApp oficial:** +57 300 304 3250
 - **Prediagnóstico oficial:** https://test.creaymonetiza.online/diagnostico_p1-page
 
 ## Los 5 Pilares de Consultoría

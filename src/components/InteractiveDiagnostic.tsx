@@ -101,7 +101,7 @@ export const InteractiveDiagnostic: React.FC<InteractiveDiagnosticProps> = ({ on
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-xl border border-neutral-200 bg-white text-xs text-neutral-600">
         <span>¿Tienes una duda puntual sobre si tu perfil califica antes de llenar el formulario?</span>
         <a
-          href={`https://wa.me/573001690969?text=${encodeURIComponent('Hola Patricia, estuve revisando tu sitio soypatricialoaiza.com y me gustaría consultar una duda sobre el prediagnóstico.')}`}
+          href={`https://wa.me/573003043250?text=${encodeURIComponent('Patricia deseo más información sobre tu servicio de consultoría.')}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#E30613] font-bold hover:underline flex items-center gap-1.5 shrink-0"

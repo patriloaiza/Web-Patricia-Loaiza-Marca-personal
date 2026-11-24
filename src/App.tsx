@@ -13,6 +13,7 @@ import { StrategicFAQ } from './components/StrategicFAQ.tsx';
 import { ContinuarExplorandoSection } from './components/ContinuarExplorandoSection.tsx';
 import { Footer } from './components/Footer.tsx';
 import { CookieConsentBanner } from './components/CookieConsentBanner.tsx';
+import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton.tsx';
 
 // Code-splitting lazy loads to dramatically minimize initial mobile JS bundle
 const ForAIView = lazy(() => import('./components/ForAIView.tsx').then(m => ({ default: m.ForAIView })));
@@ -197,7 +198,9 @@ export default function App() {
           }}
         />
       </Suspense>
-      {/* 14. Cookie Consent Notice */}
+      {/* 14. Floating WhatsApp Button */}
+      <WhatsAppFloatingButton />
+      {/* 15. Cookie Consent Notice */}
       <CookieConsentBanner />
     </div>
   );
