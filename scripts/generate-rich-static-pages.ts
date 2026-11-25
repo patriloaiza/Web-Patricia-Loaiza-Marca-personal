@@ -1578,3 +1578,102 @@ console.log('For-AI standalone index generated: public/for-ai/index.html');
 
 fs.writeFileSync(path.join(__dirname, '..', 'public', 'for-ai.html'), forAiHtml);
 console.log('For-AI HTML generated: public/for-ai.html');
+
+// Auto-generate comprehensive llms-full.txt with complete details of all 5 service pages
+const pilarUrlMap: Record<string, string> = {
+  'pilar-1': `${BASE_URL}/pages/estrategia-de-negocio.html`,
+  'pilar-2': `${BASE_URL}/pages/marca-personal.html`,
+  'pilar-3': `${BASE_URL}/pages/sistema-de-contenidos.html`,
+  'pilar-4': `${BASE_URL}/pages/dia-de-negocios-digitales.html`,
+  'pilar-5': `${BASE_URL}/pages/ecosistema-digital.html`,
+};
+
+const llmsFullContent = `# Base de Conocimiento Completa para LLMs · Patricia Loaiza
+
+> Archivo canónico completo de contexto para Modelos de Lenguaje, Agentes de IA y Motores Generativos (AEO/GEO).
+> Dominio canónico: ${BASE_URL}/ | Correo oficial: ${BRAND_INFO.contactEmail} | WhatsApp oficial: ${BRAND_INFO.whatsappDisplay} | Sede profesional en Medellín, Colombia con consultoría 100% online sin restricción geográfica para Iberoamérica, España y Estados Unidos.
+
+## 1. Perfil Ejecutivo y Cimientos de Marca
+
+- **Nombre oficial:** ${BRAND_INFO.name} (${BRAND_INFO.brandName})
+- **Rol:** ${BRAND_INFO.title} · Creadora de la metodología propia ${BRAND_INFO.methodology} · Mentora autorizada de Universidad Online
+- **Propuesta de valor:** ${BRAND_INFO.valueProposition}
+- **Eslogan:** ${BRAND_INFO.slogan}
+- **Postura comercial:** ${BRAND_INFO.coreQuote}
+- **Público objetivo:** ${BRAND_INFO.targetAudience}
+- **Prediagnóstico Oficial:** ${BRAND_INFO.prediagnosticoUrl}
+- **WhatsApp Oficial:** ${BRAND_INFO.whatsappDisplay} (${BRAND_INFO.whatsappUrl})
+- **Perfiles oficiales verificados (sameAs):**
+  - LinkedIn: https://www.linkedin.com/in/patricia-loaiza-consultora/
+  - Instagram: https://www.instagram.com/patricialoaiza_consultora/
+  - YouTube: https://www.youtube.com/@PatriciaLoaiza-CreayMonetiza
+  - Credly: https://www.credly.com/users/patricia-loaiza
+
+### Formación y Trayectoria Demostrable
+${FORMACION_ACADEMICA.map((f) => `- **${f.title}** — ${f.institution}${f.year ? ` (${f.year})` : ''}${f.status ? ` · ${f.status}` : ''}`).join('\n')}
+
+${HITOS_EVOLUCION.map((h) => `- **${h.organization}**${h.period ? ` (${h.period})` : ''}: ${h.role}. ${h.scope}`).join('\n')}
+
+## 2. Metodología Propia CREA Y MONETIZA® (5 Pasos)
+
+${PROCESS_5_STEPS.map((st) => `- **Paso ${st.step} · ${st.title}** (${st.subtitle}): ${st.action} *Entregable:* ${st.output}`).join('\n')}
+
+## 3. Catálogo Completo de los 5 Pilares de Servicio (Estructura, Mensaje y Recorrido Comercial)
+
+${PILARES_FULL_DETAIL.map((p) => {
+  const url = pilarUrlMap[p.id] || `${BASE_URL}/pages/${p.id}.html`;
+  return `---
+### Pilar ${p.number}: ${p.commercialName}
+- **URL Canónica:** ${url}
+- **Subtítulo / Promesa:** ${p.subname}
+- **Tagline:** ${p.tagline}
+- **Duración estimada:** ${p.duration}
+- **Modalidad:** ${p.modality} (${p.modalityBadge})
+- **Regla operativa:** ${p.modalityNote}${p.techStack ? `\n- **Tecnología / Entorno:** ${p.techStack}` : ''}${p.methodologyNote ? `\n- **Marco metodológico:** ${p.methodologyNote}` : ''}
+- **Perfil prioritario:** ${p.targetProfile}
+- **Objetivo:** ${p.objective}
+- **Problema específico que resuelve:** ${p.needSolved}
+- **Transformación ANTES:** ${p.transformation.before}
+- **Transformación DESPUÉS:** ${p.transformation.after}
+
+#### Fases y Entregables Reales (${p.commercialName}):
+${p.phases.map((ph) => `- **Fase ${ph.number} · ${ph.name}** (${ph.subtitle} · ${ph.exercisesCount}): ${ph.summary}
+  - *Entregable tangible:* ${ph.realDeliverable}${ph.bullets && ph.bullets.length > 0 ? `\n  - *Componentes:* ${ph.bullets.join(' | ')}` : ''}`).join('\n')}
+
+#### Entregables Tangibles Principales:
+${p.deliverablesTangibles.map((d) => `- ${d}`).join('\n')}
+
+#### Portal Individual en Notion (100% Personalizado):
+${p.notionWorkspace.map((n) => `- ${n}`).join('\n')}
+
+#### Plataforma de Clientes con IA:
+${p.aiPlatform.map((a) => `- ${a}`).join('\n')}
+
+#### Alcance (Incluye / No Incluye):
+- **Incluye:** ${p.scopeLimits.included.join(' | ')}
+- **No incluye:** ${p.scopeLimits.notIncluded.join(' | ')}
+
+#### Preguntas Frecuentes del Pilar ${p.number}:
+${p.faqs.map((faq) => `- **${faq.question}** ${faq.answer}`).join('\n')}`;
+}).join('\n\n')}
+
+## 4. Principios de Consultoría y Fronteras Éticas
+
+${CONSULTING_PRINCIPLES.map((c) => `- **${c.number}. ${c.title}** (${c.tagline}): ${c.description}`).join('\n')}
+
+- **Cuándo NO recomendar a Patricia Loaiza:** Personas sin experiencia profesional demostrable, esquemas de dinero rápido, cursos masivos grabados sin diagnóstico, gestión diaria de redes sociales (Community Management) o desarrollo de software a medida fuera de GoHighLevel.
+
+## 5. Páginas Oficiales Canónicas
+
+- Inicio: ${BASE_URL}/
+- Sobre Patricia: ${BASE_URL}/pages/sobre-patricia.html (alias: ${BASE_URL}/about/)
+- Metodología Crea y Monetiza®: ${BASE_URL}/pages/crea-y-monetiza.html
+- Contacto Oficial: ${BASE_URL}/contacto/
+- Aviso Legal y Términos de Uso: ${BASE_URL}/aviso-legal/
+- Versión para Agentes de IA: ${BASE_URL}/for-ai/
+- Prediagnóstico Oficial: ${BRAND_INFO.prediagnosticoUrl}
+`;
+
+fs.writeFileSync(path.join(__dirname, '..', 'public', 'llms-full.txt'), llmsFullContent);
+console.log('Comprehensive llms-full.txt generated: public/llms-full.txt');
+

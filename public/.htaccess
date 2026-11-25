@@ -44,10 +44,14 @@ ErrorDocument 404 /404.html
   Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet" env=NOINDEX_PRIVACY
   Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet" env=REDIRECT_NOINDEX_PRIVACY
   
+  # Public cacheability for all static HTML pages (improves CDN and AI search crawler caching)
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=300, stale-while-revalidate=600"
+  </FilesMatch>
+
   # Advertise machine-readable resources via RFC 8288 Link header on the homepage
   <Files "index.html">
     Header set Link "</index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Homepage Markdown\", </llms.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"LLMs Index\", </llms-full.txt>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Full Canonical Context\", </.well-known/ard.json>; rel=\"describedby\"; type=\"application/json\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
-    Header set Cache-Control "public, max-age=300, stale-while-revalidate=600"
   </Files>
 
   # Long-term browser & CDN caching for versioned static assets
